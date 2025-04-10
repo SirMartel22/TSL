@@ -24,6 +24,10 @@ const Hero = () => {
                 <button className= 'btn hero-btn book-surprise'> Book Your Surprise</button>
                 <button className= 'btn hero-btn explore-btn'> Explore packages </button>
             </div>
+
+            <div className = 'scrolldown-arrow'>
+                    V
+            </div>
             
         </div>
     )

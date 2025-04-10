@@ -13,8 +13,6 @@ const Navbar = () => {
                     <h1> The Surprise Lounge </h1>
                 </div>
 
-               
-
                 <ul>
                     <li> Home </li>
                     <li> Packages </li>

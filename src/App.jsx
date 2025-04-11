@@ -9,7 +9,10 @@ import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import Package from './Components/Package/Package'
 import Services from './Components/Services/Services'
-// import Navbar from './Components/Navbar/Navbar'
+import Testimonial from './Components/Testimonial/Testimonial'
+import Contact from './Components/Contact/Contact'
+import Footer from './Components/Footer/Footer'
+
 
 
 
@@ -23,7 +26,9 @@ function App() {
       <Hero />
       <Package />
       <Services />
-
+      <Testimonial />
+      <Contact />
+      <Footer />
       
     </div>
   )

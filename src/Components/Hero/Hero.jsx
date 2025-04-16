@@ -6,7 +6,7 @@ const Hero = () => {
 
     return(
 
-        <div className = "hero-container">
+        <div className = "h-90% w-90% bg-gradient-to-b from-[#1A0A2E] to-[#4B1A6F] min-h-screen">
 
             <div className = 'moments'>
                 <p>Make Every Moments Unforgettable</p>

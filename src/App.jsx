@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
 //importing all the components into the appjs
 
 import Navbar from './Components/Navbar/Navbar'

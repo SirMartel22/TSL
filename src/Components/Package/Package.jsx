@@ -1,76 +1,84 @@
 import React,{ useState, useEffect, useRef } from 'react'
 import './Package.css'
+import { Gift, Heart, Cake, PackageOpen, MoveRight } from 'lucide-react'
 
 
 const Package = () => {
 
     return(
 
-        <div className = "package-container px-30 py-20 bg-blue">
+        <div className = "flex flex-col bg-gradient-to-br from-[#100014] via-[#1a001f] to-[#2d002b] py-20 px-20 space-y-20 text-center ">
             
-            {/* header text code */}
+           
             <div className = 'package-header-text'>
-                <h1>Our Surprise Package</h1>
-                <p>Discover our range of expertly crafted surprise
+                <h1 className="text-white font-bold text-4xl sm:text-4xl lg:text-5xl text-center tracking-wide py-5">
+                    Our Surprise <span className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] bg-clip-text text-transparent">Packages</span>
+                    </h1>
+                <p className="text-neutral-500">Discover our range of expertly crafted surprise
                     packages designed to make every occassion extraordinary
                 </p>
             </div>
 
             {/* the grid card code */}
+ 
+            <div className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4 sm:px-10 lg:px-20">
 
-            <div className = "flex justify-center space-x-6 ">
-
-                <div className = 'h-150 w-150 rounded-mdpx-1 py-1 bg-black'>
-                    <div className = "icon-btn"> 
-                        icon
-                        <p>Popular</p>
+                <div className = 'h-150 w-150 rounded-md px-10 py-10 bg-black text-left border-pink border '>
+                    
+                    <div className = "flex justify-between py-1 pb-6"> 
+                        <Gift color="pink" />
+                        <p className ="bg-gradient-to-r from-[#FC466B] to-[#A855F7] rounded-md py-1 px-4">Popular</p>
 
                     </div>
-                    <p>
+                    <p className="pb-5 text-neutral-500">
                         Customised birtday packaged featuring personalised
                         gifts, decorations, and experiences to make their special
                         day truly memorable
                     </p>
-                    <button className= 'grid-btn'> Book Now</button>
+                    <button className= 'flex gap-2 text-pink'> Book Now
+                        <MoveRight color="pink" />
+                    </button>
                 </div>
 
 
                 
-                <div className = 'h-150 w-150 rounded-md bg-black px-1 py-1 two'>
-                    icon
-                    <p>
+                <div className = 'h-150 w-150 rounded-md px-10 py-10 bg-black text-left border-pink border '>
+                    <Heart color="pink" />
+                    <p  className="py-7 text-neutral-500">
                         Romantic surprise setup for couples celebrating
                         their love with custom gifts, romantic experiences, and 
                         unforgetable moments
                     </p>
-                    <button className= 'grid-btn'> Book Now</button>
+                    <button className= 'flex gap-2 text-pink'> Book Now
+                        <MoveRight color="pink" />
+                    </button>
                 </div>
 
 
-                <div className = 'h-150 w-150 rounded-md bg-black px-1 py-1 three'>
-                    icon
-                    <p>
+                <div className = 'h-150 w-150 rounded-md px-10 py-10 bg-black text-left border-pink border '>
+                    <PackageOpen color="pink" />
+                    <p  className="py-5 text-neutral-500">
                         Curated Gift boxes for any celeration, filled with premium surprises
                         tailored to the occassion and recipient's preferences.
                     </p>
-                    <button className= 'grid-btn'> Book Now</button>
+                    <button className= 'flex gap-2 text-pink'> Book Now
+                        <MoveRight color="pink" />
+                    </button>
                 </div>
 
 
-                <div className = 'h-150 w-150 rounded-md bg-black  px-1 py-1 four'>
-                    icon
-                    <p>
+                <div className = 'h-150 w-150 rounded-md px-10 py-10 bg-black text-left border-pink border '>
+                    <Cake color="pink" />
+                    <p  className="py-7 text-neutral-500">
                         Curprise elements for corporate events, team celebrations, and milestones
                         to boost morale and create lasting memories
                     </p>
-                    <button className= 'grid-btn'> Book Now</button>
+                    <button className= 'flex gap-2 text-pink'> Book Now
+                        <MoveRight color="pink" />
+                    </button>
                 </div>
 
-
-
-
             </div>
-
 
 
         </div>

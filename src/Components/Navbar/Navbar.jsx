@@ -60,7 +60,7 @@ const Navbar = () => {
 
                 </div>
                 
-                {/* Mobile links */}
+                {/* Mobile links display   */}
                 {mobileResponsive && (
                     <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-start lg:hidden">
                         <ul>

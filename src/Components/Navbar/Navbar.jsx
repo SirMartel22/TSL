@@ -9,19 +9,19 @@ const Navbar = () => {
 
     return(
 
-        <nav className = "bg-white shadow-mg fixed top-0 left-0 right-0 z-50">
-            <div className = 'max-w-7xl mx-auto px-4 flex justify-between items-center'>
+        <nav className = "">
+            <div className = "">
 
-                <div className = "text-2xl font-bold text-orange-600">
+                <div className = "">
                     <h1> The Surprise Lounge </h1>
-                </div>
+                 </div>
 
-                <ul className="hidden md: flex space-x-6">
-                    <li> Home </li>
-                    <li> Packages </li>
-                    <li> Services </li>
-                    <li> Testimonials </li>
-                    <li> Contact </li>
+                <ul className="">
+                    <li className= ""> Home </li>
+                    <li className= ""> Packages </li>
+                    <li className= ""> Services </li>
+                    <li className= ""> Testimonials </li>
+                    <li className= ""> Contact </li>
                 </ul>
 
                 <div className = 'headerBtn'>

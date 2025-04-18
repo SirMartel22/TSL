@@ -34,7 +34,7 @@ const Testimonial = () => {
     
     return(
 
-        <div className = "testimonial-container">
+        <div className = "testimonial-container px-20 py-20 ">
             
             <div className = 'testimonial-header-text'>
                 <h1>What Out Clients Say</h1>
@@ -43,7 +43,7 @@ const Testimonial = () => {
                 </p>
             </div>
 
-            <div className= 'testimonial-card'>
+            <div className= 'testimonial-card flex flex-center px-1 py-1 space-x-6'>
 
                 {testimonial.map((card) => {
                     return(

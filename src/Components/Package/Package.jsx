@@ -6,7 +6,7 @@ const Package = () => {
 
     return(
 
-        <div className = "package-container">
+        <div className = "package-container px-30 py-20 bg-blue">
             
             {/* header text code */}
             <div className = 'package-header-text'>
@@ -18,9 +18,9 @@ const Package = () => {
 
             {/* the grid card code */}
 
-            <div className = "package-grid">
+            <div className = "flex justify-center space-x-6 ">
 
-                <div className = 'grid-card one'>
+                <div className = 'h-150 w-150 rounded-mdpx-1 py-1 bg-black'>
                     <div className = "icon-btn"> 
                         icon
                         <p>Popular</p>
@@ -36,7 +36,7 @@ const Package = () => {
 
 
                 
-                <div className = 'grid-card two'>
+                <div className = 'h-150 w-150 rounded-md bg-black px-1 py-1 two'>
                     icon
                     <p>
                         Romantic surprise setup for couples celebrating
@@ -47,7 +47,7 @@ const Package = () => {
                 </div>
 
 
-                <div className = 'grid-card three'>
+                <div className = 'h-150 w-150 rounded-md bg-black px-1 py-1 three'>
                     icon
                     <p>
                         Curated Gift boxes for any celeration, filled with premium surprises
@@ -57,7 +57,7 @@ const Package = () => {
                 </div>
 
 
-                <div className = 'grid-card four'>
+                <div className = 'h-150 w-150 rounded-md bg-black  px-1 py-1 four'>
                     icon
                     <p>
                         Curprise elements for corporate events, team celebrations, and milestones

@@ -6,13 +6,13 @@ const Hero = () => {
 
     return(
 
-        <div className = "h-90% w-90% bg-gradient-to-b from-[#1A0A2E] to-[#4B1A6F] min-h-screen">
+        <div className = "">
 
-            <div className = 'moments'>
+            <div className = "">
                 <p>Make Every Moments Unforgettable</p>
             </div>
 
-            <div className = 'moments'>
+            <div className = ''>
                 <h1>Crafting Surprise Moments That Lasts a Liferime</h1>
                 <p>Elevate Your Celebration with our expertly curated surprise
                     packages designed to create memories that be cherished forever

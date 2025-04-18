@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    li{
+        @apply p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer
+    }
+    p{
+        @apply bg-gradient-to-r from-pink to-purple bg-clip-text text-transparent text-lg
+    }
+}
+

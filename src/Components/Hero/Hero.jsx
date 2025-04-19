@@ -2,13 +2,14 @@ import React,{ useState, useEffect, useRef } from 'react'
 import './Hero.css'
 import video1 from '../../assets/video1.mp4'
 import video2 from '../../assets/video2.mp4'
+import bgImg from '../../assets/bg-img.png'
 import { Gift } from "lucide-react"
 
 
 const Hero = () => {
 
     return(
-        <div className= "flex flex-col items-center mt-6 lg:mt-10">
+        <div style={{ backgroundImage: `url(${bgImg})`}} className= "bg-cover bg-center h-screen flex flex-col items-center mt-6 lg:mt-10">
                 
             <div className="flex w-1/4 rounded-md justify-center items-center border border-pink bg-tranparent py-2 mb-10">
                 <Gift color="pink" />

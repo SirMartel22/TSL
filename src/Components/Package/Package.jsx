@@ -7,7 +7,7 @@ const Package = () => {
 
     return(
 
-        <div className = "flex flex-col bg-gradient-to-br from-[#100014] via-[#1a001f] to-[#2d002b] py-20 px-20 space-y-20 text-center ">
+        <div className = "flex flex-col  py-20 px-20 space-y-20 text-center ">
             
            
             <div className = 'package-header-text'>
@@ -21,7 +21,7 @@ const Package = () => {
 
             {/* the grid card code */}
  
-            <div className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4 sm:px-10 lg:px-20">
+            <div className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4 sm:px-10 lg:px-20 ">
 
                 <div className = 'h-150 w-150 rounded-md px-10 py-10 bg-black text-left border-pink border '>
                     

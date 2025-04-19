@@ -7,14 +7,13 @@ const Package = () => {
 
     return(
 
-        <div className = "flex flex-col  py-20 px-20 space-y-20 text-center ">
-            
+        <div className = "pt-60 pb-20 px-20">
            
-            <div className = 'package-header-text'>
+            <div className = 'package-header-text my-50'>
                 <h1 className="text-white font-bold text-4xl sm:text-4xl lg:text-5xl text-center tracking-wide py-5">
                     Our Surprise <span className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] bg-clip-text text-transparent">Packages</span>
                     </h1>
-                <p className="text-neutral-500">Discover our range of expertly crafted surprise
+                <p className="text-neutral-500 my-5 md:text-base max-w-2xl text-center mx-auto">Discover our range of expertly crafted surprise
                     packages designed to make every occassion extraordinary
                 </p>
             </div>

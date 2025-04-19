@@ -9,19 +9,19 @@ import { Gift } from "lucide-react"
 const Hero = () => {
 
     return(
-        <div style={{ backgroundImage: `url(${bgImg})`}} className= "bg-cover bg-center h-screen flex flex-col items-center mt-6 lg:mt-10">
+        <div className= "h-screen flex flex-col items-center mt-6 lg:mt-10">
                 
             <div className="flex w-1/4 rounded-md justify-center items-center border border-pink bg-tranparent py-2 mb-10">
                 <Gift color="pink" />
                 <p>Make Every Moment Unforgettable</p>
             </div>
 
-            <h1 className="font-bold text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
+            <h1 className="font-bold text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide max-w-5xl">
                 Crafting <span className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] bg-clip-text text-transparent">
                     Surprise Moments</span> That Lasts a Lifetime
             </h1>
 
-            <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
+            <p className="mt-10 text-lg text-center text-neutral-500 max-w-3xl">
                 Elevate Your Celebration with our expertly curated surprise
                 packages designed to create memories that be cherished forever
             </p>

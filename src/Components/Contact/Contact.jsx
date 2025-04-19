@@ -31,16 +31,19 @@ const Contact = () => {
 
     return(
 
-        <div className = "contact-container">
+        <div className = "w-full flex flex-col justify-center items-center space-y-6 py-40">
             
-            <div className = 'contact-header-text'>
-                <h1>What Out Clients Say</h1>
-                <p>Don't just take our word for it. Here is what our clients have to say
-                    about their experiences with The Surprise Lounge
+            <div className = 'contact-header-text text-center'>
+                <h1 className="text-white font-bold tracking-wide md:text-4x lg:text-5xl py-3">
+                    Book Your 
+                    <span className= "bg-gradient-to-r from-[#ff5e62] to-[#a855f7] text-transparent bg-clip-text"> Surprise</span>
+                </h1>
+                <p className="text-neutral-500 max-w-2xl">Ready to create and unforgettable moment? Get in touch with out team to start
+                    planning your perfect surprise
                 </p>
             </div>
 
-            <div className= "getintouch-contact">
+            <div className= "flex justify-center items-center">
 
                 <div className="getintouch">
 

@@ -1,13 +1,92 @@
 import React,{ useState, useEffect, useRef } from 'react'
 import './Footer.css'
+import logo from '../../assets/logo.png'
+import {Facebook, Instagram, Twitter, Linkedin} from 'lucide-react'
 
 
 const Footer = () => {
 
     return(
 
-        <div className = "footer-container">
+        <div className = "flex flex-col justify-between items-center space-y-9 border-t border-neutral-700/80 py-16 ">
             
+
+            <div className="flex space-x-16">
+
+                {/* logo section */}
+                <div className="logo">
+                    <img className="h-10 w-30 mr-2" src={logo} alt="logo" />
+                    <p className=" w-96 text-neutral-500 my-8">
+                        Creating an unforgettable moments through personalised surprise
+                        packages for every special occassion 
+                    </p>
+
+                    <div className = "flex space-x-6">
+                        <a href=""><Facebook color="pink" /></a>
+                        <a href=""><Instagram color="pink" /></a>
+                        <a href=""><Twitter color="pink" /></a>
+                        <a href=""><Linkedin color="pink" /></a>
+                    </div>
+
+                </div>
+
+                {/* Quick Links Section */}
+                <div className="flex flex-col space-y-3 text-neutral-500">
+                    <h4 className="text-white font-bold py-3"> Quick Links</h4>
+
+                    <div className="space-y-2 flex flex-col">
+                        <a href="">Home</a>
+                        <a href="">Services</a>
+                        <a href="">How It Works</a>
+                        <a href="">Testimonials</a>
+                        <a href="">Contact</a>
+                    </div>
+                   
+                </div>
+
+                  {/* ServicesSection */}
+                  <div  className="flex flex-col space-y-3 text-neutral-500">
+
+                        <h4 className="text-white font-bold py-3"> Services</h4>
+                        <div className="space-y-2">
+                            <p className="text-neutral-500">Birthday Surprises</p>
+                            <p className="text-neutral-500">Anniversary Packages</p>
+                            <p className="text-neutral-500">Celebration Boxes</p>
+                            <p className="text-neutral-500">Corporate Events</p>
+                            <p className="text-neutral-500">Custom surprises </p>
+                        </div>
+                   </div>
+
+                {/* ServicesSection */}
+                
+                <div className="flex flex-col space-y-3 text-neutral-500">
+                    <h4 className="text-white font-bold py-3"> Contact Us</h4>
+                    <div className="space-y-2">
+
+                        <p className="text-neutral-500">
+                            hello@thesurpriselounge.com</p>
+                        <p className="text-neutral-500 w-90">
+                            123 Surprise Avenue, Suite 101 New York Ilorin, Nigeria
+                        </p>
+                        <p className="text-neutral-500">08123456789</p>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex items-center justify-between space-x-64 text-neutral-400">
+                <div>
+                    <p>&copy; 2025 The Surprise Lounge. All Rights Reserved</p>
+                    
+                </div>
+
+                <div className="flex justify-between space-x-6">
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                    <p>Cookie Plicy</p>
+
+                </div>
+            </div>
         </div>
     )
 

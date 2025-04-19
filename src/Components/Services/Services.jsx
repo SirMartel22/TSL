@@ -39,8 +39,8 @@ const Services = () => {
 
         {/* Header of the services section */}
         <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold">
-                How It <span className="text-pink">Works</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-4xl cm:text-4xl lg:text-5xl tracking-wide py-5">
+                How It <span className="bg-gradient-to-r from-[#ff5e62] to-[#a855f7] bg-clip-text text-transparent">Works</span>
             </h2>
             <p className="text-neutral-500 md:text-base mt-4 max-w-2xl mx-auto">
             Creating the perfect surprise is easier than you think. 

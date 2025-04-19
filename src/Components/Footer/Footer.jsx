@@ -74,7 +74,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="flex items-center justify-between space-x-64 text-neutral-400">
+            <div className="flex items-center justify-between space-x-64 text-neutral-400 pt-24">
                 <div>
                     <p>&copy; 2025 The Surprise Lounge. All Rights Reserved</p>
                     

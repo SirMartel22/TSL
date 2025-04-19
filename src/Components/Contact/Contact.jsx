@@ -1,19 +1,20 @@
 import React,{ useState, useEffect, useRef } from 'react'
 import './Contact.css'
+import { Mails, MapPin, Phone } from 'lucide-react'
 
 
 const Contact = () => {
 
     const contact = [
         {
-            icon: "src",
+            icon: MapPin,
             title: 'Visit Our Studio',
             address1: '123 Surprise Avenue, Suite 101, Ilorin, Nigeria',
             address2: '123 Surprise Avenue, Suite 101, Ilorin, Nigeria',
         },
 
         {
-            icon: "src",
+            icon: Mails,
             title: 'Email Us',
             address1: 'hello@thesurpriselounge.com',
             address2:  'support@thesurpriselounge.com',
@@ -21,7 +22,7 @@ const Contact = () => {
         },
 
         {
-            icon: "src",
+            icon: Phone,
             title: "Call Us",
             address1: '+234 903 854 4480',
             address2:  'Mon-Fri: 9am - 6pm',
@@ -45,10 +46,11 @@ const Contact = () => {
 
             <div className= "flex justify-center items-center">
 
-                <div className="getintouch">
-
+                <div className="bg-[#0d0b07] py-6 px-4 flex flex-col space-y-12">
+                    
                     {/* This secion of code for email and name flex */}
-                    <div className="name-mail">
+                    <div className="name-mail flex">
+
                         <div className="name">
                             <label for = 'name'>Your Name: </label>
                             <input type ='text' placeholder="Enter Your name"/>
@@ -62,7 +64,7 @@ const Contact = () => {
                     </div>
 
                     {/* this section for phone and occassion */}
-                    <div className="phone-occasion">
+                    <div className="phone-occasion flex">
                         <div className="phone">
                             <label for = 'phone'>Phone Number: </label>
                             <input type ='number' placeholder="Enter Your name"/>
@@ -84,24 +86,24 @@ const Contact = () => {
 
                     {/* this section for message input */}
                     <div className="message">
-                            <label for = 'message'> Your Message: </label>
+                            <label  for = 'message'> Your Message: </label>
                            <textarea placeholder="Enter your message"></textarea>
                         </div>
                     
                 </div>
 
                 {/* This section for contact */}
-                <div className="contact-ready">
+                <div className="contact-ready flex flex-col space-y-12">
 
                     <div className="contact">
                         {contact.map((el) => {
                             return(
-                                <div className ="contact-card">
+                                <div className ="contact-card flex my-4">
                                     <div>
                                         <img src={el.icon}/>
                                     </div>
                                     <div className="contact-title">
-                                        <h3>{el.title}</h3>
+                                        <h3 className='font-bold'>{el.title}</h3>
                                         <p>{el.address1}</p>
                                         <p>{el.address2}</p>
 
@@ -113,7 +115,7 @@ const Contact = () => {
                     </div>
 
                     <div className="ready">
-                        <h1>
+                        <h1 className="">
                             Ready for something special?
                         </h1>
                         <p>

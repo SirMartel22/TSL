@@ -7,10 +7,10 @@ const Footer = () => {
 
     return(
 
-        <div className = "flex flex-col justify-between items-center space-y-9 border-t border-neutral-700/80 py-16 px-24 ">
+        <div className = "flex flex-col justify-between items-center space-y-9 border-t border-neutral-700/80 py-16 lg:px-24 ">
             
 
-            <div className="flex space-x-16">
+            <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-16 md:grid-cols-2 space-x-16">
 
                 {/* logo section */}
                 <div className="logo">
@@ -73,7 +73,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="flex items-center justify-between space-x-64 text-neutral-400 pt-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 grspace-x-64 text-neutral-400 lg:pt-24">
                 <div>
                     <p>&copy; 2025 The Surprise Lounge. All Rights Reserved</p>
                     

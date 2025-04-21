@@ -8,7 +8,7 @@ import { Gift } from "lucide-react"
 const Hero = () => {
 
     return(
-        <div className= "h-screen flex flex-col items-center mt-6 lg:mt-10 px-20">
+        <div className= "h-screen flex flex-col items-center mt-6 lg:mt-10 lg:px-20">
                 
             <div className="flex w-[400px] rounded-md justify-center items-center border border-pink bg-tranparent py-2 mb-10 space-x-6">
                 <Gift color="pink" />

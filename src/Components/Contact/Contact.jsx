@@ -32,7 +32,7 @@ const Contact = () => {
 
     return(
 
-        <div className = "w-full flex flex-col justify-center items-center space-y-12 py-40 px-24">
+        <div className = "w-full flex flex-col justify-center items-center space-y-12 py-40 lg:px-24">
             
             <div className = 'contact-header-text text-center'>
                 <h1 className="text-white font-bold tracking-wide md:text-4x lg:text-5xl py-3">
@@ -44,9 +44,9 @@ const Contact = () => {
                 </p>
             </div>
 
-            <div className= "flex justify-center items-center space-x-8">
+            <div className= "grid grid-cols-1 lg:grid-cols-2 justify-center items-center space-x-8">
 
-                <div className="bg-[#1A1A1D] py-20 px-8 flex flex-col space-y-12 shadow-glow rounded-md w-1/2">
+                <div className="bg-[#1A1A1D] py-20 px-8 flex flex-col space-y-12 shadow-glow rounded-md w-1/2 md:w-full">
 
                     <div>
                         <h1 className=" text-4xl">Get In Touch </h1>
@@ -99,7 +99,7 @@ const Contact = () => {
                 </div>
 
                 {/* This section for contact */}
-                <div className="contact-ready flex flex-col space-y-12 w-1/2">
+                <div className="contact-ready flex flex-col space-y-12 w-full">
 
                     <div>
                         <h1 className="text-4xl"> Contact Information </h1>

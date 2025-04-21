@@ -6,7 +6,7 @@ const Package = () => {
 
     return(
 
-        <div className = "pt-24 pb-20 px-20 mt-16 px-24">
+        <div className = "pt-24 pb-20 px-20 mt-16 lg:px-24">
            
             <div className = 'package-header-text my-50'>
                 <h1 className="text-white font-bold text-4xl sm:text-4xl lg:text-5xl text-center tracking-wide py-5">

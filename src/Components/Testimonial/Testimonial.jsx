@@ -35,7 +35,7 @@ const Testimonial = () => {
     
     return(
 
-        <div className = " w-full flex flex-col justify-center items-center py-30 px-20 ">
+        <div className = " w-full flex flex-col justify-center items-center py-30 lg:px-20 ">
             
             <div className = 'testimonial-header-text text-center'>
                 <h1 className="text-white tracking-wide py-4  font-bold text-4xl md:text-4xl lg:text-5xl">
@@ -46,7 +46,7 @@ const Testimonial = () => {
                 </p>
             </div>
 
-            <div className= 'flex flex-center px-1 py-1 space-x-6'>
+            <div className= 'grid lg:grid-cols-3 gap-8 px-1 py-1 space-x-6 '>
 
                 {testimonial.map((card) => {
                     return(

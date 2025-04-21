@@ -44,7 +44,7 @@ const Contact = () => {
                 </p>
             </div>
 
-            <div className= "flex justify-center items-center  space-x-20">
+            <div className= "flex justify-center items-center space-x-8">
 
                 <div className="bg-[#1A1A1D] py-20 px-8 flex flex-col space-y-12 shadow-glow rounded-md w-1/2">
 
@@ -94,12 +94,12 @@ const Contact = () => {
                            <textarea placeholder="Enter your message" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink text-neutral-700 mt-2 "></textarea>
                         </div>
                     
-                <button className="schedule bg-gradient-to-r from-[pink] to-[purple] py-3 rounded-md">Schedule A Call</button>
+                <button className="schedule bg-gradient-to-r from-pink2 to-purple2 py-3 rounded-md">Schedule A Call</button>
 
                 </div>
 
                 {/* This section for contact */}
-                <div className="contact-ready flex flex-col space-y-12">
+                <div className="contact-ready flex flex-col space-y-12 w-1/2">
 
                     <div>
                         <h1 className="text-4xl"> Contact Information </h1>

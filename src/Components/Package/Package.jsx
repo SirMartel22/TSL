@@ -21,7 +21,7 @@ const Package = () => {
  
             <div className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4 sm:px-10 lg:px-20 ">
 
-                <div className = 'h-150 w-150 rounded-md px-10 py-10 bg-black text-left border-pink border '>
+                <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none '>
                     
                     <div className = "flex justify-between py-1 pb-6"> 
                         <Gift color="pink" />
@@ -40,7 +40,7 @@ const Package = () => {
 
 
                 
-                <div className = 'h-150 w-150 rounded-md px-10 py-10 bg-black text-left border-pink border '>
+                <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
                     <Heart color="pink" />
                     <p  className="py-7 text-neutral-500">
                         Romantic surprise setup for couples celebrating
@@ -53,7 +53,7 @@ const Package = () => {
                 </div>
 
 
-                <div className = 'h-150 w-150 rounded-md px-10 py-10 bg-black text-left border-pink border '>
+                <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none '>
                     <PackageOpen color="pink" />
                     <p  className="py-5 text-neutral-500">
                         Curated Gift boxes for any celeration, filled with premium surprises
@@ -65,7 +65,7 @@ const Package = () => {
                 </div>
 
 
-                <div className = 'h-150 w-150 rounded-md px-10 py-10 bg-black text-left border-pink border '>
+                <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
                     <Cake color="pink" />
                     <p  className="py-7 text-neutral-500">
                         Curprise elements for corporate events, team celebrations, and milestones

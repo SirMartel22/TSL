@@ -50,7 +50,7 @@ const Testimonial = () => {
 
                 {testimonial.map((card) => {
                     return(
-                    <div className = "bg-[#0d0b07] py-6 px-4 text-neutral-500 rounded-md border border-pink">
+                    <div className = "bg-[#0d0b07] py-6 px-4 text-neutral-500 rounded-md border border-pink hover:bg-hover hover:border-none">
                         <div className="flex"> 
                             <Star color="pink" />
                             <Star color="pink" />

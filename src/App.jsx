@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 
 
 //importing all the components into the appjs

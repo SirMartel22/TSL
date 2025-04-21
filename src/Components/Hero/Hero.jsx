@@ -33,7 +33,7 @@ const Hero = () => {
             </div>
 
               {/* hero videos */}
-              <div className="flex flex-row justify-center items-center my-10 space-x-12">
+              {/* <div className="flex flex-row justify-center items-center my-10 space-x-12">
                     <video autoPlay loop muted className="rounded-lg w-1/3 border border-pink shadow-pink mx-2 my-4">
                         <source src={video1} type="video/mp4" />
                         Your browser does not support the video tag
@@ -43,7 +43,7 @@ const Hero = () => {
                         <source src={video2} type="video/mp4" />
                         Your browser does not support the video tag
                     </video>
-              </div>
+              </div> */}
 
            
         </div>

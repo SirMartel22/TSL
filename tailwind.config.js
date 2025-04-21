@@ -13,6 +13,9 @@ module.exports = {
         'lighterpurple': '#2E1A47',
         'newColor':'#4B1A6F'
       },
+      boxShadow:{
+      'glow': 'rgba(0, 0, 0, 0.16) 0px 1px 4px;'
+      }
     },
   },
   plugins: [],

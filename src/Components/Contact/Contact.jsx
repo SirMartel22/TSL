@@ -1,9 +1,10 @@
 import React,{ useState, useEffect, useRef } from 'react'
-import { Mails, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 
 
 const Contact = () => {
 
+      
     const contact = [
         {
             icon: MapPin,
@@ -13,7 +14,7 @@ const Contact = () => {
         },
 
         {
-            icon: Mails,
+            icon: Mail,
             title: 'Email Us',
             address1: 'hello@thesurpriselounge.com',
             address2:  'support@thesurpriselounge.com',
@@ -31,7 +32,7 @@ const Contact = () => {
 
     return(
 
-        <div className = "w-full flex flex-col justify-center items-center space-y-6 py-40">
+        <div className = "w-full flex flex-col justify-center items-center space-y-12 py-40 px-24">
             
             <div className = 'contact-header-text text-center'>
                 <h1 className="text-white font-bold tracking-wide md:text-4x lg:text-5xl py-3">
@@ -43,35 +44,39 @@ const Contact = () => {
                 </p>
             </div>
 
-            <div className= "flex justify-center items-center  space-x-6">
+            <div className= "flex justify-center items-center  space-x-20">
 
-                <div className="bg-[#0d0b07] py-6 px-4 flex flex-col space-y-12">
+                <div className="bg-[#1A1A1D] py-20 px-8 flex flex-col space-y-12 shadow-glow rounded-md w-1/2">
+
+                    <div>
+                        <h1 className=" text-4xl">Get In Touch </h1>
+                    </div>
                     
                     {/* This secion of code for email and name flex */}
                     <div className="name-mail flex space-x-6">
 
-                        <div className="name flex flex-col space-y-2">
-                            <label for = 'name'>Your Name: </label>
-                            <input type ='text' placeholder="Enter Your name" className="w-full border border-neutral-500 focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink  text-neutral-500  " />
+                        <div className="name ">
+                            <label for = 'name' className="py-4">Your Name: </label>
+                            <input type ='text' placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  " />
                         </div>
 
-                        <div className="mail flex flex-col space-y-2">
-                            <label for = 'name'> Email Address: </label>
-                            <input type ='text' placeholder="Enter Your name" className="w-full border border-neutral-500 focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink  text-neutral-500  "/>
+                        <div className="mail">
+                            <label for = 'name' className="py-24"> Email Address: </label>
+                            <input type ='text' placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  "/>
                         </div>
                         
                     </div>
 
                     {/* this section for phone and occassion */}
                     <div className="phone-occasion flex  space-x-6">
-                        <div className="phone flex flex-col space-y-2">
+                        <div className="phone ">
                             <label for = 'phone'>Phone Number: </label>
-                            <input type ='number' placeholder="Enter Your Mobile Number" className="w-full border border-neutral-500 focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink  text-neutral-500 "/>
+                            <input type ='number' placeholder="Enter Your Mobile Number" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 "/>
                         </div>
 
-                        <div className="occassion flex flex-col space-y-2">
+                        <div className="occassion">
                             <label for = 'name'> Occassion: </label>
-                            <select name="occassion" className="w-full border border-neutral-500 focus:outline-none focus:border-pink rounded-md shadow-sm py-4 px-2 focus:ring-1 focus:ring-pink  text-neutral-500 ">
+                            <select name="occassion" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-4 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 ">
                                 <option value="Birthday">Birthday</option>
                                 <option value="Surprise">Surprise</option>
                                 <option value="Celebration">Celebration</option>
@@ -86,26 +91,32 @@ const Contact = () => {
                     {/* this section for message input */}
                     <div className="message flex flex-col space-y-2">
                             <label  for = 'message'> Your Message: </label>
-                           <textarea placeholder="Enter your message" className="w-full border border-neutral-500 focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink text-neutral-500 "></textarea>
+                           <textarea placeholder="Enter your message" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink text-neutral-700 mt-2 "></textarea>
                         </div>
                     
+                <button className="schedule bg-gradient-to-r from-[pink] to-[purple] py-3 rounded-md">Schedule A Call</button>
+
                 </div>
 
                 {/* This section for contact */}
                 <div className="contact-ready flex flex-col space-y-12">
 
-                    <div className="contact">
-                        {contact.map((el) => {
-                            return(
-                                <div className ="contact-card flex my-4">
-                                    <div>
-                                        <img src={el.icon}/>
-                                    </div>
-                                    <div className="contact-title">
-                                        <h3 className='font-bold'>{el.title}</h3>
-                                        <p>{el.address1}</p>
-                                        <p>{el.address2}</p>
+                    <div>
+                        <h1 className="text-4xl"> Contact Information </h1>
+                    </div>
 
+                    <div className="contact flex flex-col space-y-8">
+                        {contact.map((el, index) => {
+                            const Icon = el.icon
+                            return(
+                                <div  className ="contact-card flex my-4">
+                                    <div className="w-8 h-8">
+                                        <Icon color="pink" size={24} />
+                                    </div>
+                                    <div className="contact-title ">
+                                        <h3 className='font-bold mb-2'>{el.title}</h3>
+                                        <p className="text-neutral-500">{el.address1}</p>
+                                        <p className="text-neutral-500">{el.address2}</p>
 
                                     </div>
                                 </div>
@@ -113,16 +124,18 @@ const Contact = () => {
                         })}
                     </div>
 
-                    <div className="ready">
-                        <h1 className="">
+                    <div className="ready bg-[#1A1A1D] shadow-glow w-3/4 py-8 px-6 rounded-md">
+                        <h1 className="mb-2 font-bold ">
                             Ready for something special?
                         </h1>
-                        <p>
+                        <p className="mb-2 text-neutral-500 ">
                             Book a free consultation calll with our surprise
                             expert to discuss your ideas and requirements
                         </p>
 
-                        <button className= 'schedule'> Schedule a call </button>
+                        <a href="" className="schedule text-neutral-400">Schedule A Call</a>
+
+                
                     </div>
 
                 </div>

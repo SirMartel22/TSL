@@ -34,7 +34,7 @@ const Services = () => {
 
     return(
 
-       <section className = " text-white py-20 px-4 md:px-20">
+       <section className = " text-white py-20 px-4 md:px-20 px-24">
 
         {/* Header of the services section */}
         <div className="text-center mb-16">

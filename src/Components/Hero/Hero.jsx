@@ -8,14 +8,14 @@ import { Gift } from "lucide-react"
 const Hero = () => {
 
     return(
-        <div className= "h-screen flex flex-col items-center mt-6 lg:mt-10">
+        <div className= "h-screen flex flex-col items-center mt-6 lg:mt-10 px-24">
                 
             <div className="flex w-1/4 rounded-md justify-center items-center border border-pink bg-tranparent py-2 mb-10">
                 <Gift color="pink" />
                 <p>Make Every Moment Unforgettable</p>
             </div>
 
-            <h1 className="font-bold text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide max-w-5xl">
+            <h1 className="font-bold text-4xl sm:text-5xl lg:text-6xl text-center tracking-wide max-w-5xl">
                 Crafting <span className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] bg-clip-text text-transparent">
                     Surprise Moments</span> That Lasts a Lifetime
             </h1>

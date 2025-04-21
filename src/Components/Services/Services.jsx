@@ -1,5 +1,4 @@
 import React,{ useState, useEffect, useRef } from 'react';
-import './Services.css';
 import {FaCommentDots, FaBoxOpen, FaClock, FaStar} from "react-icons/fa";
 
 

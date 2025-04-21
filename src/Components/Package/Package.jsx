@@ -1,5 +1,4 @@
 import React,{ useState, useEffect, useRef } from 'react'
-import './Package.css'
 import { Gift, Heart, Cake, PackageOpen, MoveRight } from 'lucide-react'
 
 

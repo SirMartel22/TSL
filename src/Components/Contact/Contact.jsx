@@ -1,5 +1,4 @@
 import React,{ useState, useEffect, useRef } from 'react'
-import './Contact.css'
 import { Mails, MapPin, Phone } from 'lucide-react'
 
 
@@ -44,35 +43,35 @@ const Contact = () => {
                 </p>
             </div>
 
-            <div className= "flex justify-center items-center">
+            <div className= "flex justify-center items-center  space-x-6">
 
                 <div className="bg-[#0d0b07] py-6 px-4 flex flex-col space-y-12">
                     
                     {/* This secion of code for email and name flex */}
-                    <div className="name-mail flex">
+                    <div className="name-mail flex space-x-6">
 
-                        <div className="name">
+                        <div className="name flex flex-col space-y-2">
                             <label for = 'name'>Your Name: </label>
-                            <input type ='text' placeholder="Enter Your name"/>
+                            <input type ='text' placeholder="Enter Your name" className="w-full border border-neutral-500 focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink  text-neutral-500  " />
                         </div>
 
-                        <div className="mail">
+                        <div className="mail flex flex-col space-y-2">
                             <label for = 'name'> Email Address: </label>
-                            <input type ='text' placeholder="Enter Your name"/>
+                            <input type ='text' placeholder="Enter Your name" className="w-full border border-neutral-500 focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink  text-neutral-500  "/>
                         </div>
                         
                     </div>
 
                     {/* this section for phone and occassion */}
-                    <div className="phone-occasion flex">
-                        <div className="phone">
+                    <div className="phone-occasion flex  space-x-6">
+                        <div className="phone flex flex-col space-y-2">
                             <label for = 'phone'>Phone Number: </label>
-                            <input type ='number' placeholder="Enter Your name"/>
+                            <input type ='number' placeholder="Enter Your Mobile Number" className="w-full border border-neutral-500 focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink  text-neutral-500 "/>
                         </div>
 
-                        <div className="occassion">
+                        <div className="occassion flex flex-col space-y-2">
                             <label for = 'name'> Occassion: </label>
-                            <select name="occassion">
+                            <select name="occassion" className="w-full border border-neutral-500 focus:outline-none focus:border-pink rounded-md shadow-sm py-4 px-2 focus:ring-1 focus:ring-pink  text-neutral-500 ">
                                 <option value="Birthday">Birthday</option>
                                 <option value="Surprise">Surprise</option>
                                 <option value="Celebration">Celebration</option>
@@ -85,9 +84,9 @@ const Contact = () => {
                     </div>
 
                     {/* this section for message input */}
-                    <div className="message">
+                    <div className="message flex flex-col space-y-2">
                             <label  for = 'message'> Your Message: </label>
-                           <textarea placeholder="Enter your message"></textarea>
+                           <textarea placeholder="Enter your message" className="w-full border border-neutral-500 focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink text-neutral-500 "></textarea>
                         </div>
                     
                 </div>

@@ -1,5 +1,4 @@
 import React,{ useState, useEffect, useRef } from 'react'
-import './Footer.css'
 import logo from '../../assets/logo.png'
 import {Facebook, Instagram, Twitter, Linkedin} from 'lucide-react'
 

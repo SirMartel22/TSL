@@ -19,7 +19,7 @@ const Package = () => {
 
             {/* the grid card code */}
  
-            <div className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4 sm:px-10 lg:px-20 ">
+            <div className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4 sm:px-10 lg:px-12 ">
 
                 <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none '>
                     
@@ -53,7 +53,7 @@ const Package = () => {
                 </div>
 
 
-                <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none '>
+                <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
                     <PackageOpen color="pink" />
                     <p  className="py-5 text-neutral-500">
                         Curated Gift boxes for any celeration, filled with premium surprises

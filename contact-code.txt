@@ -34,23 +34,41 @@ const Contact = () => {
 
     //url = https://script.google.com/macros/s/AKfycbwKzpmd1uc2eZBVK17qrfvKMb9Sra4Frw1bxKmAxlqUJoknfP-TFTgWz6cCjY2New5d/exec
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const url = "https://script.google.com/macros/s/AKfycbyDcjLs4hg0O0wnmfxwyU7MeyCPQQsQnxoVMnDHnE5evC8fvk0YCp5DTvmZwqSX9UZx/exec" 
-        fetch(url, {
-            method: "POST",
-            headers: {"Content-Type": "application/x-www-form-urlencoded"},
-            mode: 'no-cors',
-            body: (`Name=${e.target.name.value}
-                &Email=${e.target.email.value}
-                &Phone=${e.target.phone.value}
-                &Occassion=${e.target.occassion.value}
-                &Message=${e.target.message.value}`)
-        }).then(res=>res.text()).then(data=>{
-            alert(data)
-        }).catch(error=>console.log(error))
-    }
+    const [data, setData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        occassion: "",
+        message: "",
+    });
 
+    const {name, email, phone, occassion, message} = data
+
+    const handleChange = (e) => {
+        setData({...data, [e.target.name]: e.target.value})
+    }
+    
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch("https://v1.nocodeapi.com/devtimmy/google_sheets/HaRoBEBoJyvSwSys?tabId=Sheet1",{
+                method: "POST",
+                headers: {
+                    'Content-Type': 'applications/json'
+                },
+                body: JSON.stringify([[name, email, phone, occassion, message, new Date().toLocaleString()]])
+            }
+        );
+
+        await response.json()
+        setData({...data, name:"", email:"", phone: "", occassion: "", message: ""})
+
+
+        } catch(err){
+            console.log(err)
+        }
+    }
+      
     return(
 
         <div className = "w-full flex flex-col justify-center items-center space-y-12 py-40 lg:px-24">
@@ -81,12 +99,12 @@ const Contact = () => {
 
                         <div className="name ">
                             <label for = 'name' className="py-4">Your Name: </label>
-                            <input type ='text' name="name" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  " />
+                            <input value={name} onChange={handleChange} type ='text' name="name" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  " />
                         </div>
 
                         <div className="mail">
                             <label for = 'name' className="py-24"> Email Address: </label>
-                            <input type ='text' name="email" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  "/>
+                            <input value={email} onChange={handleChange} type ='text' name="email" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  "/>
                         </div>
                         
                     </div>
@@ -95,12 +113,12 @@ const Contact = () => {
                     <div className="phone-occasion flex  space-x-6">
                         <div className="phone ">
                             <label for = 'phone'>Phone Number: </label>
-                            <input type ='number' name='phone' placeholder="Enter Your Mobile Number" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 "/>
+                            <input value={phone} onChange={handleChange} type ='number' name='phone' placeholder="Enter Your Mobile Number" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 "/>
                         </div>
 
                         <div className="occassion">
                             <label for = 'name'> Occassion: </label>
-                            <select name="occassion" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-4 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 ">
+                            <select value={occassion} onChange={handleChange} name="occassion" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-4 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 ">
                                 <option value="Birthday">Birthday</option>
                                 <option value="Surprise">Surprise</option>
                                 <option value="Celebration">Celebration</option>
@@ -115,7 +133,7 @@ const Contact = () => {
                     {/* this section for message input */}
                     <div className="message flex flex-col space-y-2">
                         <label  for = 'message'> Your Message: </label>
-                        <textarea name='message' placeholder="Enter your message" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink text-neutral-700 mt-2 "></textarea>
+                        <textarea value={message} onChange={handleChange} name='message' placeholder="Enter your message" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink text-neutral-700 mt-2 "></textarea>
                     </div>
                     
                     <button type='submit' className="schedule bg-gradient-to-r from-pink2 to-purple2 py-3 rounded-md">Schedule A Call</button>

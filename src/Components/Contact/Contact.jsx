@@ -150,16 +150,16 @@ const Contact = () => {
                         })}
                     </div>
 
-                    <div className="ready bg-[#1A1A1D] shadow-glow w-full lg:w-3/4 py-8 px-6 rounded-md">
+                    <div className="ready bg-[#1A1A1D] shadow-glow w-full lg:w-3/4 py-8 px-6 rounded-md space-y-6">
                         <h1 className="mb-2 font-bold ">
                             Ready for something special?
                         </h1>
-                        <p className="mb-2 text-neutral-500  text-[12px] lg:text-[16px] md:text-[14px]">
+                        <p className="mb-2 text-neutral-500 text-[12px] lg:text-[16px] md:text-[14px] mb-6">
                             Book a free consultation call with our surprise
                             expert to discuss your ideas and requirements
                         </p>
 
-                        <a href="" className="schedule text-neutral-400">Schedule A Call</a>
+                        <a href="" className="schedule text-neutral-400 ">Schedule A Call</a>
 
                 
                     </div>

@@ -53,10 +53,10 @@ const Contact = () => {
 
     return(
 
-        <div className = "w-full flex flex-col justify-center items-center space-y-12 py-40 lg:px-24">
+        <div className = "w-full flex flex-col justify-center items-center space-y-12 pt-8 pb-8 px-8 mt-16 lg:pt-14 lg:pb-20 lg:px-24">
             
             <div className = 'contact-header-text text-center'>
-                <h1 className="text-white font-bold tracking-wide md:text-4x lg:text-5xl py-3">
+                <h1 className="text-white font-bold tracking-wide text-4xl md:text-4x lg:text-5xl py-3">
                     Book Your 
                     <span className= "bg-gradient-to-r from-[#ff5e62] to-[#a855f7] text-transparent bg-clip-text"> Surprise</span>
                 </h1>
@@ -67,7 +67,7 @@ const Contact = () => {
 
             <div className= "grid grid-cols-1 lg:grid-cols-2 justify-center items-center space-x-8">
 
-                <div className="bg-[#1A1A1D] py-20 px-8 flex flex-col space-y-12 shadow-glow rounded-md w-1/2 md:w-full">
+                <div className="bg-[#1A1A1D] py-20 px-8 flex flex-col space-y-12 shadow-glow rounded-md w-full lg:w-1/2 md:w-full">
 
                     <div>
                         <h1 className=" text-4xl">Get In Touch </h1>
@@ -77,7 +77,7 @@ const Contact = () => {
 
               
                     {/* This secion of code for email and name flex */}
-                    <div className="name-mail flex space-x-6">
+                    <div className="name-mail flex space-x-6 ">
 
                         <div className="name ">
                             <label for = 'name' className="py-4">Your Name: </label>
@@ -128,7 +128,7 @@ const Contact = () => {
                 <div className="contact-ready flex flex-col space-y-12 w-full">
 
                     <div>
-                        <h1 className="text-4xl"> Contact Information </h1>
+                        <h1 className="text-3xl md:text-4xl "> Contact Information </h1>
                     </div>
 
                     <div className="contact flex flex-col space-y-8">

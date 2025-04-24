@@ -1,6 +1,7 @@
 import React,{ useState, useEffect, useRef } from 'react'
 import logo from '../../assets/logo.png'
-import {Facebook, Instagram, Twitter, Linkedin} from 'lucide-react'
+import {Facebook, Instagram, Twitter} from 'lucide-react'
+import { RiTiktokLine } from "react-icons/ri";
 
 
 const Footer = () => {
@@ -22,9 +23,9 @@ const Footer = () => {
 
                     <div className = "flex space-x-6">
                         <a href=""><Facebook color="pink" /></a>
-                        <a href=""><Instagram color="pink" /></a>
+                        <a href="https://www.instagram.com/thesurprise_lounge?igsh=MXcxZ2Q5eDZmdnF6ZQ%3D%3D&utm_source=qr"><Instagram color="pink" /></a>
                         <a href=""><Twitter color="pink" /></a>
-                        <a href=""><Linkedin color="pink" /></a>
+                        <a href="https://www.tiktok.com/@thesurprise_lounge?_t=ZM-8vmgoBBN4SL&_r=1"><RiTiktokLine color="pink" /></a>
                     </div>
 
                 </div>

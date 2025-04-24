@@ -65,9 +65,9 @@ const Contact = () => {
                 </p>
             </div>
 
-            <div className= "grid grid-cols-1 lg:grid-cols-2 justify-center items-center space-x-8">
+            <div className= "grid grid-cols-1 lg:grid-cols-2 justify-center items-center lg:space-x-8 space-y-12">
 
-                <div className="bg-[#1A1A1D] py-20 px-8 flex flex-col space-y-12 shadow-glow rounded-md w-full lg:w-1/2 md:w-full">
+                <div className="bg-[#1A1A1D] py-10 px-8 flex flex-col space-y-12 shadow-glow rounded-md w-full md:w-full">
 
                     <div>
                         <h1 className=" text-4xl">Get In Touch </h1>
@@ -77,7 +77,7 @@ const Contact = () => {
 
               
                     {/* This secion of code for email and name flex */}
-                    <div className="name-mail flex space-x-6 ">
+                    <div className="name-mail flex flex-col md:flex-row space-y-12 lg:flex-row md:space-x-6 mb-8">
 
                         <div className="name ">
                             <label for = 'name' className="py-4">Your Name: </label>
@@ -92,7 +92,7 @@ const Contact = () => {
                     </div>
 
                     {/* this section for phone and occassion */}
-                    <div className="phone-occasion flex  space-x-6">
+                    <div className="phone-occasion flex flex-col md:flex-row space-y-12 lg:flex-row md:space-x-6 mb-8">
                         <div className="phone ">
                             <label for = 'phone'>Phone Number: </label>
                             <input type ='number' name='phone' placeholder="Enter Your Mobile Number" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 text-[12px] lg:text-[14px] md:text-[14px]"/>
@@ -150,7 +150,7 @@ const Contact = () => {
                         })}
                     </div>
 
-                    <div className="ready bg-[#1A1A1D] shadow-glow w-3/4 py-8 px-6 rounded-md">
+                    <div className="ready bg-[#1A1A1D] shadow-glow w-full lg:w-3/4 py-8 px-6 rounded-md">
                         <h1 className="mb-2 font-bold ">
                             Ready for something special?
                         </h1>

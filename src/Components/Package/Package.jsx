@@ -6,13 +6,13 @@ const Package = () => {
 
     return(
 
-        <div className = "pt-24 pb-20 px-20 mt-16 lg:px-24">
+        <div className = "pt-8 pb-8 px-8  mt-16 lg:pt-14 lg:pb-20 lg:px-24">
            
             <div className = 'package-header-text my-50'>
                 <h1 className="text-white font-bold text-4xl sm:text-4xl lg:text-5xl text-center tracking-wide py-5">
                     Our Surprise <span className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] bg-clip-text text-transparent">Packages</span>
                     </h1>
-                <p className="text-neutral-500 my-5 md:text-base max-w-2xl text-center mx-auto">Discover our range of expertly crafted surprise
+                <p className="text-neutral-500 my-2 mb-8 md:my-5  md:text-base max-w-2xl text-center mx-auto text-[12px] lg:text-[14px] md:text-[14px]">Discover our range of expertly crafted surprise
                     packages designed to make every occassion extraordinary
                 </p>
             </div>
@@ -21,7 +21,7 @@ const Package = () => {
  
             <div className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4 sm:px-10 lg:px-12 ">
 
-                <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none '>
+                <div className = 'h-full w-full md:h-200 md:w-200 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none '>
                     
                     <div className = "flex justify-between py-1 pb-6"> 
                         <Gift color="pink" />

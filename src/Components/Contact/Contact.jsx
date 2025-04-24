@@ -60,7 +60,7 @@ const Contact = () => {
                     Book Your 
                     <span className= "bg-gradient-to-r from-[#ff5e62] to-[#a855f7] text-transparent bg-clip-text"> Surprise</span>
                 </h1>
-                <p className="text-neutral-500 max-w-2xl">Ready to create and unforgettable moment? Get in touch with out team to start
+                <p className="text-neutral-500 text-[12px] lg:text-[16px] md:text-[14px] max-w-2xl">Ready to create and unforgettable moment? Get in touch with out team to start
                     planning your perfect surprise
                 </p>
             </div>
@@ -81,12 +81,12 @@ const Contact = () => {
 
                         <div className="name ">
                             <label for = 'name' className="py-4">Your Name: </label>
-                            <input type ='text' name="name" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  " />
+                            <input type ='text' name="name" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  text-[12px] lg:text-[14px] md:text-[14px] " />
                         </div>
 
                         <div className="mail">
                             <label for = 'name' className="py-24"> Email Address: </label>
-                            <input type ='text' name="email" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  "/>
+                            <input type ='text' name="email" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  text-[12px] lg:text-[14px] md:text-[14px]"/>
                         </div>
                         
                     </div>
@@ -95,12 +95,12 @@ const Contact = () => {
                     <div className="phone-occasion flex  space-x-6">
                         <div className="phone ">
                             <label for = 'phone'>Phone Number: </label>
-                            <input type ='number' name='phone' placeholder="Enter Your Mobile Number" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 "/>
+                            <input type ='number' name='phone' placeholder="Enter Your Mobile Number" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 text-[12px] lg:text-[14px] md:text-[14px]"/>
                         </div>
 
                         <div className="occassion">
                             <label for = 'name'> Occassion: </label>
-                            <select name="occassion" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-4 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 ">
+                            <select name="occassion" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-4 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 text-[12px] lg:text-[14px] md:text-[14px] ">
                                 <option value="Birthday">Birthday</option>
                                 <option value="Surprise">Surprise</option>
                                 <option value="Celebration">Celebration</option>
@@ -118,7 +118,7 @@ const Contact = () => {
                         <textarea name='message' placeholder="Enter your message" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink text-neutral-700 mt-2 "></textarea>
                     </div>
                     
-                    <button type='submit' className="schedule bg-gradient-to-r from-pink2 to-purple2 py-3 rounded-md">Schedule A Call</button>
+                    <button type='submit' className="schedule bg-gradient-to-r from-pink2 to-purple2 py-3 px-4 hover:bg-opacity-60 rounded-md my-8">Schedule A Call</button>
                 </form>
 
 
@@ -141,8 +141,8 @@ const Contact = () => {
                                     </div>
                                     <div className="contact-title ">
                                         <h3 className='font-bold mb-2'>{el.title}</h3>
-                                        <p className="text-neutral-500">{el.address1}</p>
-                                        <p className="text-neutral-500">{el.address2}</p>
+                                        <p className="text-neutral-500 text-[12px] lg:text-[14px] md:text-[14px]">{el.address1}</p>
+                                        <p className="text-neutral-500 text-[12px] lg:text-[14px] md:text-[14px] ">{el.address2}</p>
 
                                     </div>
                                 </div>
@@ -154,8 +154,8 @@ const Contact = () => {
                         <h1 className="mb-2 font-bold ">
                             Ready for something special?
                         </h1>
-                        <p className="mb-2 text-neutral-500 ">
-                            Book a free consultation calll with our surprise
+                        <p className="mb-2 text-neutral-500  text-[12px] lg:text-[16px] md:text-[14px]">
+                            Book a free consultation call with our surprise
                             expert to discuss your ideas and requirements
                         </p>
 

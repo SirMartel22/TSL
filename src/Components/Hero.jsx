@@ -1,6 +1,7 @@
 import React,{ useState, useEffect, useRef } from 'react'
 import bgImg from '../assets/bg-img.png'
 import { Gift } from "lucide-react"
+import { Link as ScrollLink } from 'react-scroll'
 
 const Hero = () => {
 
@@ -25,8 +26,13 @@ const Hero = () => {
 
             {/* hero buttons */}
             <div className="flex justify-center items-center mt-10 space-x-4 md:space-x-12 text-[12px] md:text-[14px] lg:text[15px] ">
-                <button className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] w-70 h-70 py-3 px-3 rounded-md hover:opacity-90 hover:scale-105 transition duration-300"> Book Your Surprise</button>
-                <button className="bg-transparent border border-pink w-70 h-70 py-3 px-3 rounded-md hover:bg-pink hover:text-white hover:scale-105 transition duration-300">Explore Packages</button>
+                <ScrollLink to='contacts' smooth={true} duration={1500} offset={-70}>
+                    <button className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] w-70 h-70 py-3 px-3 rounded-md hover:opacity-90 hover:scale-105 transition duration-300"> Book Your Surprise</button>
+                </ScrollLink>
+
+                <ScrollLink to='packages' smooth={true} duration={1500} offset={-70}>
+                    <button className="bg-transparent border border-pink w-70 h-70 py-3 px-3 rounded-md hover:bg-pink hover:text-white hover:scale-105 transition duration-300">Explore Packages</button>
+                </ScrollLink>
             </div>
 
               {/* hero videos */}

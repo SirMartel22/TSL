@@ -37,7 +37,7 @@ const Navbar = () => {
                         {navItems.map((item, index)=>{
                             return(
                                 <li key={index} className="hover:bg-grey">
-                                    <ScrollLink to={item.target} smooth={true} duration={500} offset={-70} className="hover:border-pink cursor-pointer">{item.label}</ScrollLink>
+                                    <ScrollLink to={item.target} smooth={true} duration={1500} offset={-70} className="hover:border-pink cursor-pointer">{item.label}</ScrollLink>
                                 </li>
                             )
                               
@@ -46,7 +46,10 @@ const Navbar = () => {
                     
                     {/* Nav button */}
                     <div className=" hidden lg:flex justify-center items-center space-x-12 ml-14">
-                        <button className="bg-gradient-to-r from-[#FC466B] to-[#A855F7]  text-white py-2 px-4 rounded-md hover:opacity-90 hover:scale-105 transition duration-300">Book Now</button>
+                        <ScrollLink to='contacts' smooth={true} duration={1500} offset={-70}>
+                            <button className="bg-gradient-to-r from-[#FC466B] to-[#A855F7]  text-white py-2 px-4 rounded-md hover:opacity-90 hover:scale-105 transition duration-300">Book Now</button>
+                            
+                        </ScrollLink>
 
                     </div>
                     
@@ -67,13 +70,15 @@ const Navbar = () => {
                             {navItems.map((item, index)=> {
                                 return(
                                     <li key={index} className="py-4 left-0">
-                                        <ScrollLink href={item.target} smooth={true} duration={500} offset={-70} className="hover:underline cursor-pointer">{item.label}</ScrollLink>
+                                        <ScrollLink href={item.target} smooth={true} duration={1500} offset={-70} className="hover:underline cursor-pointer">{item.label}</ScrollLink>
                                     </li>
                                 )
                             })}
                         </ul>
                         <div className="flex space-x-6">
-                            <button className="bg-gradient-to-r from-[#FC466B] to-[#A855F7] text-white py-2 px-4 rounded-lg hover:opacity-90 hover:scale-105 transition duration-300">Book Now</button>
+                            <ScrollLink to='contacts' smooth={true} duration={500} offset={-70}>
+                                <button className="bg-gradient-to-r from-[#FC466B] to-[#A855F7] text-white py-2 px-4 rounded-lg hover:opacity-90 hover:scale-105 transition duration-300">Book Now</button>
+                            </ScrollLink>
                         </div>
                     </div>
                 )}

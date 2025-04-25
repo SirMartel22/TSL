@@ -31,12 +31,12 @@ const Hero = () => {
 
               {/* hero videos */}
               <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center my-10 sm:space-y-4 md:space-y-0">
-                    <video autoPlay loop muted className="rounded-lg w-full lg:w-1/3 border border-pink shadow-pink mx-2 my-4">
+                    <video autoPlay loop muted className="rounded-lg w-3/4 lg:w-1/3 md:w-1/3 border border-pink shadow-pink mx-2 my-4">
                         <source src='https://res.cloudinary.com/djhfy0pr4/video/upload/v1745564934/video1_qvmben.mp4' type="video/mp4" />
                         Your browser does not support the video tag
                     </video>
 
-                    <video autoPlay loop muted className="rounded-lg w-full lg:w-1/3 border border-pink shadow-pink mx-2 my-4">
+                    <video autoPlay loop muted className="rounded-lg w-3/4 lg:w-1/3 md:w-1/3  border border-pink shadow-pink mx-2 my-4">
                         <source src='https://res.cloudinary.com/djhfy0pr4/video/upload/v1745565378/video2_u3wpfi.mp4' type="video/mp4" />
                         Your browser does not support the video tag
                     </video>

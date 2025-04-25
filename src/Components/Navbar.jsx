@@ -1,16 +1,17 @@
 import React,{ useState, useEffect, useRef } from 'react'
 import logo from '../assets/logo.png'
 import {Menu, X} from "lucide-react"
+import { Link as ScrollLink } from 'react-scroll'
 
 
 const Navbar = () => {
 
     const navItems = [
-        { label: "Home", href: "#"},
-        { label: "About", href: "#"},
-        { label: "Services", href: "#"},
-        { label: "Testimonials", href: "#"},
-        { label: "Contact", href: "#"},
+        { label: "Home", target: "hero"},
+        { label: "About", target: "about"},
+        { label: "How it Works", target: "works"},
+        { label: "Testimonials", target: "testimonials"},
+        { label: "Contact", target: "contacts"},
     ];
 
     const [mobileResponsive, setMobileResponsive] = useState(false)
@@ -36,7 +37,7 @@ const Navbar = () => {
                         {navItems.map((item, index)=>{
                             return(
                                 <li key={index} className="hover:bg-grey">
-                                    <a href={item.href} className="hover:border-pink">{item.label}</a>
+                                    <ScrollLink to={item.target} smooth={true} duration={500} offset={-70} className="hover:border-pink cursor-pointer">{item.label}</ScrollLink>
                                 </li>
                             )
                               
@@ -45,7 +46,7 @@ const Navbar = () => {
                     
                     {/* Nav button */}
                     <div className=" hidden lg:flex justify-center items-center space-x-12 ml-14">
-                        <button className="bg-gradient-to-r from-[#FC466B] to-[#A855F7]  text-white font-bold py-2 px-4 rounded-md">Book Now</button>
+                        <button className="bg-gradient-to-r from-[#FC466B] to-[#A855F7]  text-white py-2 px-4 rounded-md hover:opacity-90 hover:scale-105 transition duration-300">Book Now</button>
 
                     </div>
                     
@@ -66,13 +67,13 @@ const Navbar = () => {
                             {navItems.map((item, index)=> {
                                 return(
                                     <li key={index} className="py-4 left-0">
-                                        <a href={item.href} className="hover:underline">{item.label}</a>
+                                        <ScrollLink href={item.target} smooth={true} duration={500} offset={-70} className="hover:underline cursor-pointer">{item.label}</ScrollLink>
                                     </li>
                                 )
                             })}
                         </ul>
                         <div className="flex space-x-6">
-                            <button className="bg-gradient-to-r from-[#FC466B] to-[#A855F7]  text-white font-bold py-2 px-4 rounded-md">Book Now</button>
+                            <button className="bg-gradient-to-r from-[#FC466B] to-[#A855F7] text-white py-2 px-4 rounded-lg hover:opacity-90 hover:scale-105 transition duration-300">Book Now</button>
                         </div>
                     </div>
                 )}

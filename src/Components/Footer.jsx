@@ -11,7 +11,7 @@ const Footer = () => {
         <div className = "flex flex-col justify-between items-center space-y-9 border-t border-neutral-700/80 pt-8 pb-8 px-8 mt-16 lg:pt-14 lg:pb-20 lg:px-24 ">
             
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-16 md:grid-cols-2 lg:space-x-16 space-y-8 text-[13px] md:text-[14px] lg:text-[15px]">
+            <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-16 md:grid-cols-2 lg:space-x-16 space-y-8 lg:space-y-0 text-[13px] md:text-[14px] lg:text-[15px]">
 
                 {/* logo section */}
                 <div className="logo">
@@ -74,7 +74,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 grspace-x-64 text-neutral-400 lg:pt-24 text-[13px] md:text-[14px] lg:text-[15px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 justify-between space-x-36 text-neutral-400 lg:pt-24 text-[13px] md:text-[14px] lg:text-[15px]">
                 <div>
                     <p>&copy; 2025 The Surprise Lounge. All Rights Reserved</p>
                     

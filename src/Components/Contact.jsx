@@ -53,7 +53,7 @@ const Contact = () => {
 
     return(
 
-        <div className = "w-full flex flex-col justify-center items-center space-y-12 pt-8 pb-8 px-8 mt-16 lg:mt-4 lg:pt-14 lg:pb-20 lg:px-24">
+        <div className = "w-full flex flex-col justify-center items-center space-y-12 pt-8 pb-8 px-8 mt-16 lg:mt-16 lg:px-20 lg:pt-8" id='contacts'>
             
             <div className = 'contact-header-text text-center'>
                 <h1 className="text-white font-bold tracking-wide text-4xl md:text-4x lg:text-5xl py-3">
@@ -118,7 +118,7 @@ const Contact = () => {
                         <textarea name='message' placeholder="Enter your message" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink text-neutral-700 mt-2 "></textarea>
                     </div>
                     
-                    <button type='submit' className="schedule bg-gradient-to-r from-pink2 to-purple2 py-3 px-4 hover:bg-opacity-60 rounded-md my-8">Schedule A Call</button>
+                    <button type='submit' className="schedule bg-gradient-to-r from-pink2 to-purple2 py-3 px-4 hover:bg-opacity-60 rounded-md my-8 hover:opacity-90 hover:scale-105 transition duration-300">Schedule A Call</button>
                 </form>
 
 

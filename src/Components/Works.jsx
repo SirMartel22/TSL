@@ -5,7 +5,7 @@ const Works = () => {
 
     return(
 
-        <div className="pt-8 pb-8 px-8 mt-16 lg:pt-14 lg:mt-0 lg:pb-20 lg:px-24 ">
+        <div className="pt-8 pb-8 px-8 mt-16 lg:mt-16 lg:px-20 lg:mb-16 lg:pt-8" id='works'>
 
                {/* Header of the services section */}
         <div className="text-center mb-16">

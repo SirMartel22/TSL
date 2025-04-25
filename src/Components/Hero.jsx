@@ -5,7 +5,7 @@ import { Gift } from "lucide-react"
 const Hero = () => {
 
     return(
-        <div className= "h-screen flex flex-col items-center lg:mt-10 lg:px-20 mb-96 lg:mb-8">
+        <div className= "h-screen flex flex-col items-center mt-8 lg:mt-16 lg:px-20 lg:mb-16" id='hero'>
                 
             <div className="flex w-[300px] md:w-[400px] lg:w-[400px] rounded-md justify-center items-center border border-pink bg-tranparent py-2 mb-10 space-x-3">
                 <Gift color="pink" />
@@ -25,8 +25,8 @@ const Hero = () => {
 
             {/* hero buttons */}
             <div className="flex justify-center items-center mt-10 space-x-4 md:space-x-12 text-[12px] md:text-[14px] lg:text[15px] ">
-                <button className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] w-70 h-70 py-3 px-3 rounded-md"> Book Your Surprise</button>
-                <button className="bg-transparent border border-pink w-70 h-70 py-3 px-3 rounded-md">Explore Packages</button>
+                <button className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] w-70 h-70 py-3 px-3 rounded-md hover:opacity-90 hover:scale-105 transition duration-300"> Book Your Surprise</button>
+                <button className="bg-transparent border border-pink w-70 h-70 py-3 px-3 rounded-md hover:bg-pink hover:text-white hover:scale-105 transition duration-300">Explore Packages</button>
             </div>
 
               {/* hero videos */}

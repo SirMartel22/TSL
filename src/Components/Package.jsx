@@ -1,5 +1,6 @@
 import React,{ useState, useEffect, useRef } from 'react'
 import { Gift, Heart, Cake, PackageOpen, MoveRight } from 'lucide-react'
+import { Link as ScrollLink } from 'react-scroll'
 
 
 const Package = () => {
@@ -24,7 +25,7 @@ const Package = () => {
                 <div className = 'h-full w-full md:h-200 md:w-200 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none '>
                     
                     <div className = "flex justify-between py-1 pb-6"> 
-                        <Gift color="pink" />
+                        <Gift size={48} color="pink" />
                         <p className ="bg-gradient-to-r from-[#FC466B] to-[#A855F7] rounded-md py-1 px-4">Popular</p>
 
                     </div>
@@ -33,47 +34,61 @@ const Package = () => {
                         gifts, decorations, and experiences to make their special
                         day truly memorable
                     </p>
-                    <button className= 'flex gap-2 text-pink'> Book Now
-                        <MoveRight color="pink" />
-                    </button>
+                    <ScrollLink to="contacts" smooth={true} duration={1500} offset={-70}>
+                        <button className= 'flex gap-2 text-pink'> Book Now
+                            <MoveRight color="pink" />
+                        </button>
+                    </ScrollLink>
+                   
                 </div>
 
 
                 
-                <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
-                    <Heart color="pink" />
+                <div className = 'h-full w-full rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
+                    <Heart size={48} color="pink" />
                     <p  className="py-7 text-neutral-500">
                         Romantic surprise setup for couples celebrating
                         their love with custom gifts, romantic experiences, and 
                         unforgetable moments
                     </p>
-                    <button className= 'flex gap-2 text-pink'> Book Now
-                        <MoveRight color="pink" />
-                    </button>
+
+                    <ScrollLink to="contacts" smooth={true} duration={1500} offset={-70}>
+                        <button className= 'flex gap-2 text-pink'> Book Now
+                            <MoveRight color="pink" />
+                        </button>
+                    </ScrollLink>
                 </div>
 
 
-                <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
-                    <PackageOpen color="pink" />
+                <div className = 'h-full w-full rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
+                    <PackageOpen size={48} color="pink" />
                     <p  className="py-5 text-neutral-500">
                         Curated Gift boxes for any celeration, filled with premium surprises
                         tailored to the occassion and recipient's preferences.
                     </p>
-                    <button className= 'flex gap-2 text-pink'> Book Now
-                        <MoveRight color="pink" />
-                    </button>
+
+                    <ScrollLink to="contacts" smooth={true} duration={1500} offset={-70}>
+                        <button className= 'flex gap-2 text-pink'> Book Now
+                            <MoveRight color="pink" />
+                        </button>
+                    </ScrollLink>
+
                 </div>
 
 
-                <div className = 'h-150 w-150 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
-                    <Cake color="pink" />
+                <div className = 'h-full w-full rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
+                    <Cake size={48} color="pink" />
                     <p  className="py-7 text-neutral-500">
                         Curprise elements for corporate events, team celebrations, and milestones
                         to boost morale and create lasting memories
                     </p>
-                    <button className= 'flex gap-2 text-pink'> Book Now
-                        <MoveRight color="pink" />
-                    </button>
+
+                    <ScrollLink to="contacts" smooth={true} duration={1500} offset={-70}>
+                        <button className= 'flex gap-2 text-pink'> Book Now
+                            <MoveRight color="pink" />
+                        </button>
+                    </ScrollLink>
+
                 </div>
 
             </div>

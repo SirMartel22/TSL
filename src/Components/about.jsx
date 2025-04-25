@@ -8,7 +8,7 @@ const About = () => {
     // AboutVideo
     // Quote and CEO's picture
     return(
-        <div className="about pt-8 pb-2 px-8 lg:mt-16 lg:px-24 lg:pt-32 space-y-8" id='about'>
+        <div className="about pt-8 pb-2 px-8 lg:px-24 space-y-8" id='about'>
 
             <h1 className="text-white font-bold text-4xl sm:text-4xl lg:text-5xl text-center tracking-wide md:py-3">
                     About <span className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] bg-clip-text text-transparent">Us</span>

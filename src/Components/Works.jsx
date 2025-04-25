@@ -22,35 +22,35 @@ const Works = () => {
 
                 {/* first */}
                 <div className="first-work flex flex-col md:flex-row lg:flex-row lg:items-center justify-center md:space-x-12 lg:space-x-20">
-                    <div className="image w-full  lg:h-[200px] lg:w-[400px] md:h-[200px] md:w-[400px]">
+                    <div className="image w-full  lg:h-full lg:w-[400px] md:h-[200px] md:w-[400px]">
                         <img className="w-full rounded-md border border-pink"  src="https://res.cloudinary.com/djhfy0pr4/image/upload/v1745570820/Customized_gz2k2g.jpg"/>
                     </div>
 
-                    <div className="text-card bg-[#1a1a2e] pb-10 pt-10 px-8 w-full lg:text-right md:text-right rounded-md shadow-glow lg:h-[200px] lg:w-[400px] md:h-[200px] md:w-[400px]">
+                    <div className="text-card bg-[#1a1a2e] px-8 w-full md:w-1/3 rounded-md shadow-glow py-10 text-right">
                         <div className="num-icon flex space-x-[50%] justify-end items-center">
-                            <h2 className="1">1</h2>
-                            <Headset color="pink" />
+                            <h2 className="1 bg-pink px-2 py-2 h-12 w-12 text-center text-2xl rounded-full">1</h2>
+                            <Headset size={48} color="pink" />
                         </div>
 
-                        <h3 className="title text-2xl py-2">Consult and Plan </h3>
-                        <p className="text text-neutral-500 text-[12px] md:text-[14px] lg:text-[15px]">Tell us about the occasion, the recipient, and your budget. Our surprise experts will help craft the perfect experience.</p>
+                        <h3 className="title text-2xl my-2 ">Consult and Plan </h3>
+                        <p className="text text-neutral-500 text-[12px] md:text-[14px] lg:text-[15px] lg:w-auto">Tell us about the occasion, the recipient, and your budget. Our surprise experts will help craft the perfect experience.</p>
                     </div>
                 </div>
 
             {/* second */}
                 <div className="second-work flex flex-col-reverse md:flex-row lg:flex-row items-center justify-center md:space-x-12 lg:space-x-20">
                    
-                    <div className="text-card bg-[#1a1a2e] pb-10 pt-10 px-8 w-full rounded-md shadow-glow lg:h-[200px] lg:w-[400px] md:h-[200px] md:w-[400px] ">
+                    <div className="text-card bg-[#1a1a2e] px-8 w-full md:w-1/3 rounded-md shadow-glow py-10 ">
                         <div className="num-icon flex space-x-[50%] justify-start items-center">
-                            <h2 className="2">2</h2>
-                            <Box color="pink" />
+                            <h2 className="2 bg-pink px-2 py-2 h-12 w-12 text-center text-2xl rounded-full">2</h2>
+                            <Box size={48} color="pink" />
                         </div>
 
-                        <h3 className="title text-2xl">Customized Package </h3>
-                        <p className="text text-neutral-500 text-[12px] md:text-[14px] lg:text-[15px]">We curate a personalized surprise package tailored to your specifications with premium gifts and unique experiences.</p>
+                        <h3 className="title text-2xl my-2">Customized Package </h3>
+                        <p className="text text-neutral-500 text-[12px] md:text-[14px] lg:text-[15px] lg:w-auto">We curate a personalized surprise package tailored to your specifications with premium gifts and unique experiences.</p>
                     </div>
 
-                    <div className="image w-full  lg:h-[200px] lg:w-[400px] md:h-[200px] md:w-[400px]">
+                    <div className="image w-full lg:h-full lg:w-[400px] md:h-[200px] md:w-[400px]">
                         <img className="w-full rounded-md border border-pink"  src="https://res.cloudinary.com/djhfy0pr4/image/upload/v1745571446/customized1_lp1lto.jpg"/>
                     </div>
 
@@ -60,19 +60,19 @@ const Works = () => {
             {/* third */}
 
                 <div className="third-work  flex flex-col md:flex-row lg:flex-row items-center justify-center md:space-x-12 lg:space-x-20">
-                    <div className="image w-full lg:h-[200px] lg:w-[400px] md:h-[200px] md:w-[400px]">
+                    <div className="image w-full lg:h-full lg:w-[400px] md:h-[200px] md:w-[400px]">
                         <img className="w-full rounded-md border border-pink"  src="https://res.cloudinary.com/djhfy0pr4/image/upload/v1745575091/schedule_namody.jpg"/>
                         
                     </div>
 
-                    <div className="text-card bg-[#1a1a2e] pb-10 pt-10 px-8 w-full text-right rounded-md shadow-glow lg:h-[200px] lg:w-[400px] md:h-[200px] md:w-[400px]">
+                    <div className="text-card bg-[#1a1a2e] px-8 w-full md:w-1/3 rounded-md shadow-glow py-10 text-right">
                         <div className="num-icon flex space-x-[50%] justify-end items-center">
-                            <h2 className="3">3</h2>
-                            <Clock3 color="pink" />
+                            <h2 className="3 bg-pink px-2 py-2 h-12 w-12 text-center text-2xl rounded-full">3</h2>
+                            <Clock3 size={48} color="pink" />
                             
                         </div>
-                        <h3 className="title text-2xl">Schedule Delivery</h3>
-                        <p className="text text-neutral-500 text-[12px] md:text-[14px] lg:text-[15px]">Choose the perfect moment for the surprise, and we’ll coordinate the delivery seamlessly for maximum impact..</p>
+                        <h3 className="title text-2xl my-2">Schedule Delivery</h3>
+                        <p className="text text-neutral-500 text-[12px] md:text-[14px] lg:text-[15px] lg:w-auto">Choose the perfect moment for the surprise, and we’ll coordinate the delivery seamlessly for maximum impact..</p>
                     </div>
                 </div>
 
@@ -81,24 +81,24 @@ const Works = () => {
 
                 <div className="fourth-work flex flex-col-reverse md:flex-row lg:flex-row items-center justify-center md:space-x-12 lg:space-x-20">
                     
-                    <div className="text-card bg-[#1a1a2e] pb-10 pt-10 px-8 w-full rounded-md shadow-glow lg:h-[200px] lg:w-[400px] md:h-[200px] md:w-[400px]">
-                        <div className="num-icon flex space-x-[50%] justify-start items-center">
-                            <h2 className="4">4</h2>
-                            <SmilePlus color="pink" />
+                    <div className="text-card bg-[#1a1a2e] px-8 w-full md:w-1/3 rounded-md shadow-glow py-10">
+                        <div className="num-icon flex space-x-[50%] justify-start items-center ">
+                            <h2 className="4 bg-pink px-2 py-2 h-12 w-12 text-center text-2xl rounded-full">4</h2>
+                            <SmilePlus size={48} color="pink" />
                         </div>
                         
-                        <h3 className="title text-2xl">Create Memories </h3>
-                        <p className="text text-neutral-500 text-[12px] md:text-[14px] lg:text-[15px]">Watch as your thoughtfully planned surprise unfolds, creating joy and unforgettable memories that last a lifetime.</p>
+                        <h3 className="title text-2xl my-2">Create Memories </h3>
+                        <p className="text text-neutral-500 text-[12px] md:text-[14px] lg:text-[15px] lg:w-auto">Watch as your thoughtfully planned surprise unfolds, creating joy and unforgettable memories that last a lifetime.</p>
                     </div>
                     
-                    <div className="image w-full lg:h-[200px] lg:w-[400px] md:h-[200px] md:w-[400px] ">
+                    <div className="image w-full lg:h-full lg:w-[400px] md:h-[200px] md:w-[400px] ">
                         <img className="w-full rounded-md border border-pink"  src="https://res.cloudinary.com/djhfy0pr4/image/upload/v1745570861/memories_3_p3vdes.jpg"/>
                     </div>
 
                    
                 </div>
 
-                <div className="divider hidden lg:block lg:absolute lg:top-[-150px] w-[1px] ml-[50%] h-[115%] border border-pink">
+                <div className="divider hidden lg:block lg:absolute lg:top-[-150px] w-[1px] ml-[50%] h-[110%] border border-pink">
 
                 </div>
             </div>

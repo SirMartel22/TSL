@@ -70,7 +70,7 @@ const Navbar = () => {
                             {navItems.map((item, index)=> {
                                 return(
                                     <li key={index} className="py-4 left-0">
-                                        <ScrollLink href={item.target} smooth={true} duration={1500} offset={-70} className="hover:underline cursor-pointer">{item.label}</ScrollLink>
+                                        <ScrollLink to={item.target} smooth={true} duration={1500} offset={-70} className="hover:underline cursor-pointer">{item.label}</ScrollLink>
                                     </li>
                                 )
                             })}

@@ -42,7 +42,7 @@ const Testimonial = () => {
                 <h1 className="text-white tracking-wide py-4  font-bold text-4xl md:text-4xl lg:text-5xl">
                     What Our <span className="bg-gradient-to-r from-[#ff5e62] to-[#a855f7] text-transparent bg-clip-text">Clients</span> Say
                     </h1>
-                <p className = "text-neutral-500 py-5 max-w-2xl  text-[12px] lg:text-[14px] md:text-[14px]">Don't just take our word for it. Here is what our clients have to say
+                <p className = "text-neutral-500 py-5 max-w-2xl  text-[14px] lg:text-[16px] md:text-[14px]">Don't just take our word for it. Here is what our clients have to say
                     about their experiences with The Surprise Lounge
                 </p>
             </div>

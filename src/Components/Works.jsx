@@ -12,7 +12,7 @@ const Works = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-4xl sm:text-4xl lg:text-5xl tracking-wide py-5">
                 How It <span className="bg-gradient-to-r from-[#ff5e62] to-[#a855f7] bg-clip-text text-transparent">Works</span>
             </h2>
-            <p className="text-neutral-500 md:text-base mt-4 max-w-2xl mx-auto  text-[12px] lg:text-[14px] md:text-[14px] ">
+            <p className="text-neutral-500 md:text-base mt-4 max-w-2xl mx-auto  text-[14px] lg:text-[16px] md:text-[14px] ">
             Creating the perfect surprise is easier than you think. 
             Our four-step process ensures a seamless experience from conception to delivery.
             </p>

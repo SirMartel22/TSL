@@ -11,6 +11,7 @@ import Works from './Components/Works'
 import Testimonial from './Components/Testimonial'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
+import About from './Components/About'
 
 
 
@@ -23,6 +24,7 @@ function App() {
 
       <Navbar />
       <Hero />
+      <About />
       <Package />
       {/* <Services /> */}
       <Works />

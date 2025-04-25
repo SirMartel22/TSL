@@ -18,7 +18,7 @@ const Hero = () => {
                     Surprise Moments</span> That Lasts a Lifetime
             </h1>
 
-            <p className="mt-5 md:mt-7 lg:mt-10 text-lg text-center text-neutral-500 max-w-3xl text-[12px] md:text-[13px] lg:text-[14px]">
+            <p className="mt-5 md:mt-7 lg:mt-10 text-lg text-center text-neutral-500 max-w-3xl text-[14px] md:text-[15px] lg:text-[16px]">
                 Elevate Your Celebration with our expertly curated surprise
                 packages designed to create memories that be cherished forever
             </p>

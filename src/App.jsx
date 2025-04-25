@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import Package from './Components/Package'
 import Services from './Components/Services'
+import Works from './Components/Works'
 import Testimonial from './Components/Testimonial'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
@@ -24,6 +25,7 @@ function App() {
       <Hero />
       <Package />
       <Services />
+      <Works />
       <Testimonial />
       <Contact />
       <Footer />

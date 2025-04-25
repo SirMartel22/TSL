@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll'
 const Hero = () => {
 
     return(
-        <div className= "h-screen flex flex-col items-center mt-8 lg:mt-16 lg:px-20 lg:mb-16" id='hero'>
+        <div className= "flex flex-col items-center mt-8 lg:mt-16 lg:px-20 lg:mb-16" id='hero'>
                 
             <div className="flex w-[300px] md:w-[400px] lg:w-[400px] rounded-md justify-center items-center border border-pink bg-tranparent py-2 mb-10 space-x-3">
                 <Gift color="pink" />
@@ -36,7 +36,7 @@ const Hero = () => {
             </div>
 
               {/* hero videos */}
-              <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center my-10 sm:space-y-4 md:space-y-0">
+              <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center my-10 space-y-4 md:space-y-0">
                     <video autoPlay loop muted className="rounded-lg w-3/4 lg:w-1/3 md:w-1/3 border border-pink shadow-pink mx-2 my-4">
                         <source src='https://res.cloudinary.com/djhfy0pr4/video/upload/v1745564934/video1_qvmben.mp4' type="video/mp4" />
                         Your browser does not support the video tag

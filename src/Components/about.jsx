@@ -8,15 +8,15 @@ const About = () => {
     // AboutVideo
     // Quote and CEO's picture
     return(
-        <div className="about pt-8 pb-8 px-8  mt-16 lg:mt-16 lg:px-24 lg:pt-32 space-y-8" id='about'>
+        <div className="about pt-8 pb-2 px-8 lg:mt-16 lg:px-24 lg:pt-32 space-y-8" id='about'>
 
-            <h1 className="text-white font-bold text-4xl sm:text-4xl lg:text-5xl text-center tracking-wide py-3">
+            <h1 className="text-white font-bold text-4xl sm:text-4xl lg:text-5xl text-center tracking-wide md:py-3">
                     About <span className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] bg-clip-text text-transparent">Us</span>
                     </h1>
                 <div className="about-intro flex flex-col justify-center w-full md:flex-row space-x-24 text-pink ">
 
-                    <div className="about-introduction space-y-4 text-neutral-500 w-3/4" id="about-intro ">
-                        <p className="about ">
+                    <div className="about-introduction space-y-4 text-neutral-500 w-full lg:w-3/4 md:w-3/4" id="about-intro ">
+                        <p className="about w-full">
                             At The Surprise Lounge, we specialize in creating unforgettable moments through unique and thoughtful surprise packages. 
                             Whether it's a birthday, wedding, anniversary, or any special occasion, we help you celebrate your loved ones in the most heartwarming way. 
                             Our goal is to make every moment count by turning ordinary days into extraordinary memories.
@@ -33,7 +33,7 @@ const About = () => {
 
                 <div className="intro-video flex items-center justify-center" id="intro-video">
 
-                    <video autoPlay loop className=' rounded-md w-3/4 border border-pink'>
+                    <video autoPlay loop className=' rounded-md w-full lg:w3/4 md:w-3/4 border border-pink'>
                         <source src="https://res.cloudinary.com/djhfy0pr4/video/upload/v1745614143/aboutvideo_wpw2io.mp4" />
                         Your browser does not support the video tag
                     </video>
@@ -41,8 +41,8 @@ const About = () => {
                 </div>
 
                 {/* The Ceo corner section */}
-                <div className="ceo flex flex-col w-full md:flex-row items-center justify-center space-x-24">
-                    <div className="quote image w-[500px]">
+                <div className="ceo flex flex-col w-full md:flex-row items-center justify-center space-y-8 lg:space-x-24 md:space-x-24">
+                    <div className="quote image lg:w-[500px] md:w-[400px] w-full ">
                         <p className="text-2xl mb-4 text-neutral-400 italic">"Why give a gift when you can give goosebumps? 
                             At The Surprise Lounge, we turn ordinary days into unforgettable moments. 
                             Birthdays, weddings, or just because—we bring the wow, the smiles, 

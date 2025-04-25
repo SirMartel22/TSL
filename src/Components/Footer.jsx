@@ -22,10 +22,10 @@ const Footer = () => {
                     </p>
 
                     <div className = "flex space-x-6">
-                        <a href=""><Facebook color="pink" /></a>
+                        {/* <a href=""><Facebook color="pink" /></a> */}
                         <a href="https://www.instagram.com/thesurprise_lounge?igsh=MXcxZ2Q5eDZmdnF6ZQ%3D%3D&utm_source=qr"><Instagram color="pink" /></a>
-                        <a href=""><Twitter color="pink" /></a>
-                        <a href="https://www.tiktok.com/@thesurprise_lounge?_t=ZM-8vmgoBBN4SL&_r=1"><RiTiktokLine color="pink" /></a>
+                        {/* <a href=""><Twitter color="pink" /></a> */}
+                        <a href="https://www.tiktok.com/@thesurprise_lounge?_t=ZM-8vmgoBBN4SL&_r=1"><RiTiktokLine className="text-3xl" color="pink" /></a>
                     </div>
 
                 </div>

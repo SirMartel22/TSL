@@ -1,6 +1,6 @@
 import React,{ useState, useEffect, useRef } from 'react'
 import { Star } from 'lucide-react'
-import avatar from '../../assets/avatar.png'
+import avatar from '../assets/avatar.png'
 
 
 const Testimonial = () => {

@@ -1,14 +1,11 @@
 import React,{ useState, useEffect, useRef } from 'react'
-// import video1 from '../../assets/video1.mp4'
-// import video2 from '../../assets/video2.mp4'
-import bgImg from '../../assets/bg-img.png'
+import bgImg from '../assets/bg-img.png'
 import { Gift } from "lucide-react"
-
 
 const Hero = () => {
 
     return(
-        <div className= "h-screen flex flex-col items-center lg:mt-10 lg:px-20 mb-96">
+        <div className= "h-screen flex flex-col items-center lg:mt-10 lg:px-20 mb-96 lg:mb-8">
                 
             <div className="flex w-[300px] md:w-[400px] lg:w-[400px] rounded-md justify-center items-center border border-pink bg-tranparent py-2 mb-10 space-x-3">
                 <Gift color="pink" />
@@ -35,12 +32,12 @@ const Hero = () => {
               {/* hero videos */}
               <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center my-10 sm:space-y-4 md:space-y-0">
                     <video autoPlay loop muted className="rounded-lg w-full border border-pink shadow-pink mx-2 my-4">
-                        <source src='https://drive.google.com/file/d/1PAAaaMSuJ5yDoFZB5B1geHZzC4psu2Lx/view?usp=sharing' type="video/mp4" />
+                        <source src='https://drive.google.com/uc?export=download&id=1PAAaaMSuJ5yDoFZB5B1geHZzC4psu2Lx' type="video/mp4" />
                         Your browser does not support the video tag
                     </video>
 
                     <video autoPlay loop muted className="rounded-lg w-full border border-pink shadow-pink mx-2 my-4">
-                        <source src='https://drive.google.com/file/d/1-bNmPLIdy8QalRz2wRGsy_D8McLXBucr/view?usp=sharing' type="video/mp4" />
+                        <source src='https://drive.google.com/uc?export=download&id=1-bNmPLIdy8QalRz2wRGsy_D8McLXBucr' type="video/mp4" />
                         Your browser does not support the video tag
                     </video>
               </div>

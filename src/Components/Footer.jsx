@@ -1,5 +1,5 @@
 import React,{ useState, useEffect, useRef } from 'react'
-import logo from '../../assets/logo.png'
+import logo from '../assets/logo.png'
 import {Facebook, Instagram, Twitter} from 'lucide-react'
 import { RiTiktokLine } from "react-icons/ri";
 

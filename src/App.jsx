@@ -3,13 +3,13 @@ import { useState } from 'react'
 
 //importing all the components into the appjs
 
-import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
-import Package from './Components/Package/Package'
-import Services from './Components/Services/Services'
-import Testimonial from './Components/Testimonial/Testimonial'
-import Contact from './Components/Contact/Contact'
-import Footer from './Components/Footer/Footer'
+import Navbar from './Components/Navbar'
+import Hero from './Components/Hero'
+import Package from './Components/Package'
+import Services from './Components/Services'
+import Testimonial from './Components/Testimonial'
+import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 
 
 
@@ -21,12 +21,7 @@ function App() {
     <div>
 
       <Navbar />
-
-      <div className="max-w-7xl mx-auto pt-20 px-6">
-        <Hero />
-
-      </div>
-      
+      <Hero />
       <Package />
       <Services />
       <Testimonial />

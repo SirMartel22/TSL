@@ -38,7 +38,7 @@ const Works = () => {
                 </div>
 
             {/* second */}
-                <div className="second-work flex flex-col flex flex-col md:flex-row lg:flex-row items-center justify-center md:space-x-12 lg:space-x-20">
+                <div className="second-work flex flex-col-reverse md:flex-row lg:flex-row items-center justify-center md:space-x-12 lg:space-x-20">
                    
                     <div className="text-card bg-[#1a1a2e] py-12 px-8 w-full lg:w-[500px] rounded-md shadow-glow">
                         <div className="num-icon space-x-[50%] justify-center items-center">
@@ -79,7 +79,7 @@ const Works = () => {
 
             {/* fourth */}
 
-                <div className="fourth-work flex flex-col md:flex-row lg:flex-row items-center justify-center md:space-x-12 lg:space-x-20">
+                <div className="fourth-work flex flex-col-reverse md:flex-row lg:flex-row items-center justify-center md:space-x-12 lg:space-x-20">
                     
                     <div className="text-card bg-[#1a1a2e] py-12 px-8 w-full lg:w-[500px] rounded-md shadow-glow">
                         <div className="num-icon flex space-x-[50%] justify-center items-center">

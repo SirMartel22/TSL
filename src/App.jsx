@@ -6,7 +6,7 @@ import { useState } from 'react'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import Package from './Components/Package'
-import Services from './Components/Services'
+// import Services from './Components/Services'
 import Works from './Components/Works'
 import Testimonial from './Components/Testimonial'
 import Contact from './Components/Contact'
@@ -24,7 +24,7 @@ function App() {
       <Navbar />
       <Hero />
       <Package />
-      <Services />
+      {/* <Services /> */}
       <Works />
       <Testimonial />
       <Contact />

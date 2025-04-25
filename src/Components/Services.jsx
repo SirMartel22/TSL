@@ -33,7 +33,6 @@ const steps = [
 const Services = () => {
 
     return(
-        // pt-8 pb-8 px-8  mt-16 lg:pt-14 lg:pb-20 lg:px-24
 
        <section className = " text-white py-8 px-24 md:px-20 px-24 ">
 

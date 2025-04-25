@@ -6,7 +6,7 @@ const Package = () => {
 
     return(
 
-        <div className = "pt-8 pb-8 px-8  mt-16 lg:pt-14 lg:pb-20 lg:px-24">
+        <div className = "pt-8 pb-8 px-8  mt-16 lg:pt-14 lg:mt-32 lg:pb-20 lg:px-24">
            
             <div className = 'package-header-text my-50'>
                 <h1 className="text-white font-bold text-4xl sm:text-4xl lg:text-5xl text-center tracking-wide py-5">
@@ -29,7 +29,7 @@ const Package = () => {
 
                     </div>
                     <p className="pb-5 text-neutral-500">
-                        Customised birtday packaged featuring personalised
+                        Customised birthday packaged featuring personalised
                         gifts, decorations, and experiences to make their special
                         day truly memorable
                     </p>

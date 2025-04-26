@@ -81,12 +81,12 @@ const Contact = () => {
 
                         <div className="name ">
                             <label for = 'name' className="py-4">Your Name: </label>
-                            <input type ='text' name="name" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  text-[12px] lg:text-[14px] md:text-[14px] " />
+                            <input type ='text' name="name" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-400 text-[12px] lg:text-[14px] md:text-[14px] " />
                         </div>
 
                         <div className="mail">
                             <label for = 'name' className="py-24"> Email Address: </label>
-                            <input type ='text' name="email" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700  text-[12px] lg:text-[14px] md:text-[14px]"/>
+                            <input type ='text' name="email" placeholder="Enter Your name" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-400 text-[12px] lg:text-[14px] md:text-[14px]"/>
                         </div>
                         
                     </div>
@@ -95,12 +95,12 @@ const Contact = () => {
                     <div className="phone-occasion flex flex-col md:flex-row space-y-12 lg:space-y-0 lg:flex-row md:space-x-6 mb-8">
                         <div className="phone ">
                             <label for = 'phone'>Phone Number: </label>
-                            <input type ='number' name='phone' placeholder="Enter Your Mobile Number" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 text-[12px] lg:text-[14px] md:text-[14px]"/>
+                            <input type ='number' name='phone' placeholder="Enter Your Mobile Number" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-400   text-[12px] lg:text-[14px] md:text-[14px]"/>
                         </div>
 
                         <div className="occassion">
                             <label for = 'name'> Occassion: </label>
-                            <select name="occassion" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-4 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-700 text-[12px] lg:text-[14px] md:text-[14px] ">
+                            <select name="occassion" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-4 px-2 focus:ring-1 focus:ring-pink mt-2 text-neutral-400  text-[12px] lg:text-[14px] md:text-[14px] ">
                                 <option value="Birthday">Birthday</option>
                                 <option value="Surprise">Surprise</option>
                                 <option value="Celebration">Celebration</option>
@@ -115,7 +115,7 @@ const Contact = () => {
                     {/* this section for message input */}
                     <div className="message flex flex-col space-y-2">
                         <label  for = 'message'> Your Message: </label>
-                        <textarea name='message' placeholder="Enter your message" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink text-neutral-700 mt-2 "></textarea>
+                        <textarea name='message' placeholder="Enter your message" className="w-full border border-neutral-900 shadow-glow focus:outline-none focus:border-pink rounded-md shadow-sm py-3 px-2 focus:ring-1 focus:ring-pink text-neutral-400  mt-2 "></textarea>
                     </div>
                     
                     <button type='submit' className="schedule bg-gradient-to-r from-pink2 to-purple2 py-3 px-4 hover:bg-opacity-60 rounded-md my-8 hover:opacity-90 hover:scale-105 transition duration-300">Schedule A Call</button>

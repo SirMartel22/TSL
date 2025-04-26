@@ -49,6 +49,9 @@ const Contact = () => {
         }).then(res=>res.text()).then(data=>{
             alert(data)
             e.target.name.value = '';
+            e.target.email.value = '';
+            e.target.phone.value = '';
+            e.target.occassion.value = '';
         }).catch(error=>console.log(error))
     }
 

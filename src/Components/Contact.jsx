@@ -48,6 +48,7 @@ const Contact = () => {
                 &Message=${e.target.message.value}`)
         }).then(res=>res.text()).then(data=>{
             alert(data)
+            e.target.name.value = '';
         }).catch(error=>console.log(error))
     }
 

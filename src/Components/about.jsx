@@ -41,7 +41,7 @@ const About = () => {
                 </div>
 
                 {/* The Ceo corner section */}
-                <div className="ceo flex flex-col w-full md:flex-row items-center justify-center space-y-8 lg:space-x-24 md:space-x-24">
+                <div className="ceo-section flex flex-col w-full md:flex-row items-center justify-center space-y-8 lg:space-x-24 md:space-x-24">
                     <div className="quote image lg:w-[500px] md:w-[400px] w-full ">
                         <p className="text-2xl mb-4 text-neutral-400 italic">"Why give a gift when you can give goosebumps? 
                             At The Surprise Lounge, we turn ordinary days into unforgettable moments. 

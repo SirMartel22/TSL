@@ -1,31 +1,66 @@
-import React,{ useState, useEffect, useRef } from 'react'
-import bgImg from '../assets/bg-img.png'
+import React,{ useEffect, useRef } from 'react'
+// import bgImg from '../assets/bg-img.png'
 import { Gift } from "lucide-react"
-import { Link as ScrollLink } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 const Hero = () => {
 
+    const momentRef = useRef(null)
+    const headerTitleRef = useRef(null) 
+    const headerTextRef = useRef(null) 
+    const buttonRef = useRef(null) 
+    const videoRef = useRef(null) 
+
+
+    
+    useEffect(() => { 
+        const elements = [momentRef.current, headerTitleRef.current, headerTextRef.current, buttonRef.current, videoRef.current];
+
+        elements.forEach((el) => {
+            gsap.fromTo(el, {
+                y: 50,
+                opacity: 0.2,
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1.5,
+                delay: 0.5,
+                ease: 'power2.inOut',
+                scrollTrigger: {
+                    trigger: el,
+                    // start: '90%',
+                    toggleAction: 'play none none none'
+                }
+          })  
+        })
+
+
+    }, [])
     return(
         <div className= "flex flex-col items-center mt-8 lg:mt-16 lg:px-20 lg:mb-16" id='hero'>
                 
-            <div className="flex w-[300px] md:w-[400px] lg:w-[400px] rounded-md justify-center items-center border border-pink bg-tranparent py-2 mb-10 space-x-3">
+            <div ref={momentRef} className="flex w-[300px] md:w-[400px] lg:w-[400px] rounded-md justify-center items-center border border-pink bg-tranparent py-2 mb-10 space-x-3">
                 <Gift color="pink" />
                 <p className="text-[12px] md:text-[13px] lg:text-[14px]">Make Every Moment Unforgettable</p>
             </div>
 
-            <h1 className="font-bold text-4xl sm:text-5xl lg:text-6xl text-center tracking-wide max-w-5xl">
+            <h1  ref={headerTitleRef}  className="font-bold text-4xl sm:text-5xl lg:text-6xl text-center tracking-wide max-w-5xl">
                 Crafting <span className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] bg-clip-text text-transparent">
                     Surprise Moments</span> That Lasts a Lifetime
             </h1>
 
-            <p className="mt-5 md:mt-7 lg:mt-10 text-lg text-center text-neutral-500 max-w-3xl text-[14px] md:text-[15px] lg:text-[16px]">
+            <p  ref={headerTextRef}  className="mt-5 md:mt-7 lg:mt-10 text-lg text-center text-neutral-500 max-w-3xl text-[14px] md:text-[15px] lg:text-[16px]">
                 Elevate Your Celebration with our expertly curated surprise
                 packages designed to create memories that be cherished forever
             </p>
             
 
             {/* hero buttons */}
-            <div className="flex justify-center items-center mt-10 space-x-4 md:space-x-12 text-[12px] md:text-[14px] lg:text[15px] ">
+            <div ref={buttonRef} className="flex justify-center items-center mt-10 space-x-4 md:space-x-12 text-[12px] md:text-[14px] lg:text[15px] ">
                 <ScrollLink to='contacts' smooth={true} duration={1500} offset={-70}>
                     <button className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] w-70 h-70 py-3 px-3 rounded-md hover:opacity-90 hover:scale-105 transition duration-300"> Book Your Surprise</button>
                 </ScrollLink>
@@ -36,7 +71,7 @@ const Hero = () => {
             </div>
 
               {/* hero videos */}
-              <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center my-10 space-y-4 md:space-y-0">
+              <div ref={videoRef} className="flex flex-col md:flex-row lg:flex-row justify-center items-center my-10 space-y-4 md:space-y-0">
                     <video autoPlay loop muted className="rounded-lg w-3/4 lg:w-1/3 md:w-1/3 border border-pink shadow-pink mx-2 my-4">
                         <source src='https://res.cloudinary.com/djhfy0pr4/video/upload/v1745564934/video1_qvmben.mp4' type="video/mp4" />
                         Your browser does not support the video tag

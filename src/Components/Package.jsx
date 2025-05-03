@@ -1,19 +1,30 @@
-import React,{ useState, useEffect, useRef } from 'react'
+import React,{ useEffect, useRef } from 'react'
 import { Gift, Heart, Cake, PackageOpen, MoveRight } from 'lucide-react'
 import { Link as ScrollLink } from 'react-scroll'
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 
 const Package = () => {
 
+    const packageTitleRef = useRef(null);
+    const packageTextRef = useRef(null)
+    // const
+    
+    useEffect(() => {
+
+    })
+    
     return(
 
         <div className = " pb-8 px-8  mt-16 lg:mt-16 lg:px-20 lg:mb-16" id="packages">
            
             <div className = 'package-header-text my-50'>
-                <h1 className="text-white font-bold text-4xl sm:text-4xl lg:text-5xl text-center tracking-wide py-5">
+                <h1 ref={ packageTitleRef } className="text-white font-bold text-4xl sm:text-4xl lg:text-5xl text-center tracking-wide py-5">
                     Our Surprise <span className="bg-gradient-to-r from-[#FF5E62] to-[#A855F7] bg-clip-text text-transparent">Packages</span>
                     </h1>
-                <p className="text-neutral-500 my-2 mb-8 md:my-5  md:text-base max-w-2xl text-center mx-auto text-[14px] lg:text-[16px] md:text-[15px]">Discover our range of expertly crafted surprise
+                <p ref={packageTextRef} className="text-neutral-500 my-2 mb-8 md:my-5  md:text-base max-w-2xl text-center mx-auto text-[14px] lg:text-[16px] md:text-[15px]">Discover our range of expertly crafted surprise
                     packages designed to make every occassion extraordinary
                 </p>
             </div>

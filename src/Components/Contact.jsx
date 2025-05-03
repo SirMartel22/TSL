@@ -52,6 +52,7 @@ const Contact = () => {
             e.target.email.value = '';
             e.target.phone.value = '';
             e.target.occassion.value = '';
+            e.target.message.value = '';
         }).catch(error=>console.log(error))
     }
 

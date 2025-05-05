@@ -17,25 +17,42 @@ const Hero = () => {
 
     
     useEffect(() => { 
-        const elements = [momentRef.current, headerTitleRef.current, headerTextRef.current, buttonRef.current, videoRef.current];
 
-        elements.forEach((el) => {
-            gsap.fromTo(el, {
+        const timeline = gsap.timeline({
+            defaults: {
+                duration: 1,
+                ease: 'power2.inOut'
+            },
+        });
+
+    
+        const elements = [momentRef.current,
+                            headerTitleRef.current,
+                            headerTextRef.current,
+                            buttonRef.current,
+                            videoRef.current
+                        ];
+
+        elements.forEach((el, index) => {
+            timeline.fromTo(el, {
                 y: 50,
                 opacity: 0.2,
             },
+            
             {
                 y: 0,
                 opacity: 1,
-                duration: 1.5,
-                delay: 0.5,
+                // duration: 1,
                 ease: 'power2.inOut',
                 scrollTrigger: {
                     trigger: el,
                     // start: '90%',
                     toggleAction: 'play none none none'
-                }
-          })  
+                },
+            
+            },
+            `-=${index * 0.2}`
+            );
         })
 
 

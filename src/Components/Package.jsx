@@ -5,15 +5,57 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
-
 const Package = () => {
 
     const packageTitleRef = useRef(null);
     const packageTextRef = useRef(null)
+    const package1 = useRef(null)
+    const package2 = useRef(null)
+    const package3 = useRef(null)
+    const package4 = useRef(null)
+
     // const
     
     useEffect(() => {
 
+        const timeline = gsap.timeline({
+            defaults: {
+                duration: 1,
+                ease: 'power2.inOut'
+            },
+        });
+
+        const titleElements = [packageTitleRef.current,
+                                packageTextRef.current,
+                                package1.current,
+                                package2.current,
+                                package3.current,
+                                package4.current               
+        ]
+        
+
+        titleElements.forEach((el, index) => {
+            timeline.fromTo(el, {
+                    y: 50,
+                    opacity: 0.2,
+                },
+
+                {
+                    y: 0,
+                    duration: 1,
+                    opacity: 1,
+                    ease: 'power2.inOut',
+                    scrollTrigger: {
+                        trigger: el,
+                        // start: 'top 80%',
+                        toggleAction: 'play none none none',
+                }
+
+            },
+            `-=${index * 0.1}`
+            )
+            
+        })
     })
     
     return(
@@ -33,7 +75,7 @@ const Package = () => {
  
             <div className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4 sm:px-10 lg:px-12 ">
 
-                <div className = 'h-full w-full md:h-200 md:w-200 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none '>
+                <div ref= {package1} className = 'h-full w-full md:h-200 md:w-200 rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none '>
                     
                     <div className = "flex justify-between py-1 pb-6"> 
                         <Gift size={48} color="pink" />
@@ -53,9 +95,7 @@ const Package = () => {
                    
                 </div>
 
-
-                
-                <div className = 'h-full w-full rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
+                <div ref= {package2} className = 'h-full w-full rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
                     <Heart size={48} color="pink" />
                     <p  className="py-7 text-neutral-500">
                         Romantic surprise setup for couples celebrating
@@ -71,7 +111,7 @@ const Package = () => {
                 </div>
 
 
-                <div className = 'h-full w-full rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
+                <div ref= {package3} className = 'h-full w-full rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
                     <PackageOpen size={48} color="pink" />
                     <p  className="py-5 text-neutral-500">
                         Curated Gift boxes for any celeration, filled with premium surprises
@@ -87,7 +127,7 @@ const Package = () => {
                 </div>
 
 
-                <div className = 'h-full w-full rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
+                <div ref= {package4} className = 'h-full w-full rounded-md px-6 py-6 bg-black text-left border-pink border hover:bg-hover hover:border-none'>
                     <Cake size={48} color="pink" />
                     <p  className="py-7 text-neutral-500">
                         Curprise elements for corporate events, team celebrations, and milestones

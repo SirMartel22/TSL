@@ -23,7 +23,7 @@ const About = () => {
                 scrollTrigger: {
                     trigger: el,
                     delay: 0.2,
-                    // start: '10%',
+                    start: 'top 80%',
                     toggleAction: 'plan none none none'
                 }
             })
@@ -57,7 +57,7 @@ const About = () => {
                 <div ref= {aboutVideoRef} className="intro-video flex items-center justify-center" id="intro-video">
 
                     <video autoPlay loop className=' rounded-md w-full lg:w3/4 md:w-3/4 border border-pink'>
-                        <source src="https://res.cloudinary.com/djhfy0pr4/video/upload/v1745614143/aboutvideo_wpw2io.mp4" />
+                        <source src="https://res.cloudinary.com/djhfy0pr4/video/upload/v1746789633/WhatsApp_Video_2025-05-03_at_18.28.42_fdf33fed_awinqi.mp4" />
                         Your browser does not support the video tag
                     </video>
 

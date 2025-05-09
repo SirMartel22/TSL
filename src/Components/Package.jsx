@@ -15,48 +15,48 @@ const Package = () => {
     const package4 = useRef(null)
 
     // const
-    
     useEffect(() => {
-
         const timeline = gsap.timeline({
             defaults: {
                 duration: 1,
-                ease: 'power2.inOut'
+                ease: 'power2.inOut',
             },
         });
-
-        const titleElements = [packageTitleRef.current,
-                                packageTextRef.current,
-                                package1.current,
-                                package2.current,
-                                package3.current,
-                                package4.current               
-        ]
-        
-
+    
+        const titleElements = [
+            packageTitleRef.current,
+            packageTextRef.current,
+            package1.current,
+            package2.current,
+            package3.current,
+            package4.current,
+        ];
+    
+    
+        // Animate the elements with ScrollTrigger
         titleElements.forEach((el, index) => {
-            timeline.fromTo(el, {
+            timeline.fromTo(
+                el,
+                {
                     y: 50,
                     opacity: 0.2,
                 },
-
                 {
                     y: 0,
-                    duration: 1,
                     opacity: 1,
-                    ease: 'power2.inOut',
                     scrollTrigger: {
                         trigger: el,
-                        // start: 'top 80%',
+                        start: 'top 80%', // Trigger when the element is 80% down the viewport
                         toggleAction: 'play none none none',
-                }
-
-            },
-            `-=${index * 0.1}`
-            )
-            
-        })
-    })
+                    },
+                },
+                `-=${index * 0.2}` // Overlap animations slightly
+            );
+        });
+    
+        // Recalculate ScrollTrigger
+        ScrollTrigger.refresh();
+    }, []);
     
     return(
 

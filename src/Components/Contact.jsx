@@ -1,4 +1,4 @@
-import {  useEffect, useRef } from 'react'
+// import {  useEffect, useRef } from 'react'
 import { Mail, MapPin, Phone } from 'lucide-react'
 
 
@@ -140,7 +140,7 @@ const Contact = () => {
                         {contact.map((el, index) => {
                             const Icon = el.icon
                             return(
-                                <div  className ="contact-card flex my-4">
+                                <div key={index} className ="contact-card flex my-4">
                                     <div className="w-8 h-8">
                                         <Icon color="pink" size={24} />
                                     </div>
